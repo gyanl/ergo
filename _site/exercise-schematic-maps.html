@@ -1,0 +1,154 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Exercise - Schematic Maps" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/exercise-schematic-maps" property="og:url"><title>Exercise - Schematic Maps - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/exercise-schematic-maps" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Exercise - Schematic Maps</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <h3 id="credits">Credits</h3>
+                <p>This exercise is based on Rasagy's Schematic Map exercise. You can watch his Outlier 2022 talk <a href="https://www.youtube.com/watch?v=4wPYzYMpJLc">Scheming Against Accurate Maps</a> on Youtube and check out <a href="https://github.com/mapschool">Map School</a> on GitHub.</p>
+                <h4 id="step-1---where-who-why">Step 1 - Where, who, why?</h4>
+                <p>Think of a map that you would like to make. You can make a map of your hometown, the locality you grew up in, the city you live in now, or something else. Try adding one more angle to this map - is it a map of quiet places in Delhi? What to see in Hyderabad if you're only there for a day?</p>
+                <h4 id="step-2---mental-model">Step 2 - Mental Model</h4>
+                <p>Without looking at an actual map, start sketching on pen and paper out what you remember about the area. You can mark out places of interest, roads, even memories that are unique to you.</p>
+                <h4 id="step-3---curate">Step 3 - Curate</h4>
+                <p>Now look at the same space on a map of your choice. You may find more things you forgot about, and you'll have a more accurate real world representation of places and distances. You can take a screenshot and start redrawing your sketch to account for these.</p>
+                <h4 id="step-4---abstract">Step 4 - Abstract</h4>
+                <p>Try and find a visual metaphor that works for this map. Is there a shape that is forming that you could smoothen to make it more geometric? Are there clear associations for some other shape that you can make with this area? If you can't find anything else, try and fit things to a square, hexagonal, or other grid.</p>
+                <h4 id="submission-format">Submission Format</h4>
+                <p>Take a photo of your sketch (get it as clean as possible) and also save each subsequent version of the map you make. Submit these in a Google Doc with captions to describe what you changed at each step.</p>
+                <h4 id="examples">Examples</h4>
+                <ul>
+                  <li><a href="https://github.com/mapschool/course/issues?q=label%3A%22Schematic%20Map%22%20">Schematic Maps by other students</a></li>
+                </ul>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/grading">
+                      <h6>Grading</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Lectures
+                        Data Visualization Course Grading Plan
+                        Assessment and Grading Bre...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/lecture-9">
+                      <h6>Lecture 9</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">&gt; Link to Slides
+                        &gt; [Data Viz  Lecture 9  1 April 2025.pdf](https://gyanl.com/dv/assets/pdf/...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

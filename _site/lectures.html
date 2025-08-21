@@ -1,0 +1,350 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Lectures" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/lectures" property="og:url"><title>Lectures - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/lectures" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Lectures</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <p>See also: <span class="tooltip"><a href="/dv/syllabus">Syllabus</a><span class="right bottom"><span class="tooltip-title">Syllabus</span><br/>
+                      <span class="tooltip-excerpt">See also: Lectures · Grading<br />
+                        <br />
+                        Subject Code: DD325<br />
+                        Course Title: Data Visualization<br />
+                        Jan to May 2025<br />
+                        <br />
+                        Course Objective: Learn to use data as a design material to exhibit, explore, explain, ex...</span><i></i></span></span> · <span class="tooltip"><a href="/dv/grading">Grading</a><span class="right bottom"><span class="tooltip-title">Grading</span><br/>
+                      <span class="tooltip-excerpt">See also: Syllabus · Lectures<br />
+                        <br />
+                        Data Visualization Course Grading Plan<br />
+                        <br />
+                        Assessment and Grading Breakdown<br />
+                        <br />
+                        Your performance in this course will be evaluated across the following components, e...</span><i></i></span></span></p>
+                <h4 id="tuesdays">Tuesdays</h4>
+                <ul>
+                  <li><strong>10am - 12:30pm</strong> Lectures + Studio</li>
+                  <li><strong>1pm - 2pm</strong> Lunch Break</li>
+                  <li><strong>2pm - 5pm</strong> Presentations + Exercises
+                    <h4 id="lecture-1---data-and-information"><span class="tooltip"><a href="/dv/lecture-1">Lecture 1</a><span class="right bottom"><span class="tooltip-title">Lecture 1</span><br/>
+                          <span class="tooltip-excerpt"><br />
+                            Link to Slides<br />
+                            Data Viz - Lecture 1 - 7 Jan 2025.pdf<br />
+                            <br />
+                            <br />
+                            Data and Information<br />
+                            <br />
+                            Morning<br />
+                            <br />
+                            Data, Information, Knowledge, Wisdom<br />
+                            Processing Data to Information<br />
+                            Infographics, Data Visualisation<br />
+                            ...</span><i></i></span></span> - Data and Information</h4>
+                    <p><em>7 January 2025</em></p>
+                  </li>
+                </ul>
+                <h4 id="lecture-2---structured-data"><span class="tooltip"><a href="/dv/lecture-2">Lecture 2</a><span class="right bottom"><span class="tooltip-title">Lecture 2</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 2 - 14 Jan 2025.pdf<br />
+                        <br />
+                        <br />
+                        Structured Data<br />
+                        <br />
+                        Morning<br />
+                        <br />
+                        Why visualise?<br />
+                        Visual representations can lead to insights<br />
+                        Card PIN Dataset<br />
+                        Exercise: Exercise - PIN P...</span><i></i></span></span> - Structured Data</h4>
+                <p><em>14 January 2025</em></p>
+                <h4 id="lecture-3---marks--channels--unstructured-data"><span class="tooltip"><a href="/dv/lecture-3">Lecture 3</a><span class="right bottom"><span class="tooltip-title">Lecture 3</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 3a - 21 Jan 2025.pdf<br />
+                        Data Viz - Lecture 3b - 21 Jan 2025.pdf<br />
+                        <br />
+                        <br />
+                        Marks &amp; Channels<br />
+                        Morning<br />
+                        <br />
+                        Grading Scheme<br />
+                        Reading: Chapter 5 of Tamara Munzner's Visualiza...</span><i></i></span></span> - Marks &amp; Channels + Unstructured Data</h4>
+                <p><em>21 January 2025</em></p>
+                <h4 id="lecture-4---making-charts--human-visual-perception"><span class="tooltip"><a href="/dv/lecture-4">Lecture 4</a><span class="right bottom"><span class="tooltip-title">Lecture 4</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 4 - 28 Jan 2025.pdf<br />
+                        <br />
+                        <br />
+                        Making Charts<br />
+                        Morning<br />
+                        <br />
+                        Reading: Chapter 9 (Page 209-222) from Good Charts by Scott Berinato<br />
+                        Presentations: Exercise - Data Visualisa...</span><i></i></span></span> - Making Charts + Human Visual Perception</h4>
+                <p><em>28 January 2025</em></p>
+                <h4 id="lecture-5---convincing-with-data"><span class="tooltip"><a href="/dv/lecture-5">Lecture 5</a><span class="right bottom"><span class="tooltip-title">Lecture 5</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 5 - 4 Feb 2025.pdf<br />
+                        <br />
+                        <br />
+                        Convincing with Data<br />
+                        Morning<br />
+                        <br />
+                        What is a chart saying?<br />
+                        The Trifecta Check for Critiquing Data Vis Projects<br />
+                        WTF Visualizations<br />
+                        IIT gr...</span><i></i></span></span> - Convincing with Data</h4>
+                <p><em>4 February 2025</em></p>
+                <h4 id="lecture-6---data-around-us"><span class="tooltip"><a href="/dv/lecture-6">Lecture 6</a><span class="right bottom"><span class="tooltip-title">Lecture 6</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 6 - 11 Feb 2025.pdf<br />
+                        <br />
+                        <br />
+                        Data is Around Us<br />
+                        Morning<br />
+                        <br />
+                        Data Art<br />
+                        Participatory Visualisations<br />
+                        Birdwatching<br />
+                        Jang Lee - Recognise The Sound<br />
+                        Exercise: Exercis...</span><i></i></span></span> - Data Around Us</h4>
+                <p><em>11 February 2025</em></p>
+                <ul>
+                  <li>Create groups for Midterm Project</li>
+                  <li>Present and finalise topics</li>
+                </ul>
+                <hr />
+                <p>No lecture on 18 February 2025 (Techfest/Engifest)</p>
+                <hr />
+                <h4 id="lecture-7---colors-and-cartography"><span class="tooltip"><a href="/dv/lecture-7">Lecture 7</a><span class="right bottom"><span class="tooltip-title">Lecture 7</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 7 - 25 Feb 2025.pdf<br />
+                        <br />
+                        <br />
+                        Colors<br />
+                        Morning<br />
+                        <br />
+                        Reading: Reimagining Google Maps with a New Color Palette<br />
+                        Colors and what they represent<br />
+                        Representing colors digital...</span><i></i></span></span> - Colors and Cartography</h4>
+                <p><em>25 February 2025</em></p>
+                <h4 id="midterm-examproject-presentations">Midterm Exam/Project Presentations</h4>
+                <p><em>4 March 2025 or TBD</em></p>
+                <h4 id="lecture-8---online-lecture"><span class="tooltip"><a href="/dv/lecture-8">Lecture 8</a><span class="right bottom"><span class="tooltip-title">Lecture 8</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 8 - 24 March 2025.pdf<br />
+                        <br />
+                        <br />
+                        Data Viz in Interfaces<br />
+                        Morning<br />
+                        <br />
+                        Dashboard Etymology - The History of the Dashboard – DED Company<br />
+                        Who, What, Why, When<br />
+                        Examples of ...</span><i></i></span></span> - Online Lecture</h4>
+                <p><em>11 March 2025</em></p>
+                <hr />
+                <p>No lecture on 18 March 2025 (Gyan Travelling)</p>
+                <hr />
+                <h4 id="lecture-9---geospatial-visualisation"><span class="tooltip"><a href="/dv/lecture-9">Lecture 9</a><span class="right bottom"><span class="tooltip-title">Lecture 9</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 9 - 1 April 2025.pdf<br />
+                        <br />
+                        <br />
+                        Schematic Maps<br />
+                        Morning<br />
+                        <br />
+                        Reading: The “Vignelli” Map at 50 - New York Transit Museum<br />
+                        Midsem exam results and discussion<br />
+                        Schematic Ma...</span><i></i></span></span> - Geospatial Visualisation</h4>
+                <p><em>25 March 2025</em></p>
+                <h4 id="lecture-10---storytelling-with-data"><span class="tooltip"><a href="/dv/lecture-10/Lecture%2010.html">Lecture 10</a><span class="right bottom"><span class="tooltip-title">Lecture 10</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 10 - 8 April 2025.pdf<br />
+                        <br />
+                        <br />
+                        Interactivity &amp; Motion<br />
+                        Morning<br />
+                        <br />
+                        Animated Transitions in Statistical Data Graphics on Vimeo<br />
+                        Presentations - Exercise - Self Vis...</span><i></i></span></span> - Storytelling with Data</h4>
+                <p><em>1 April 2025</em></p>
+                <h4 id="lecture-11---lying-and-bias"><span class="tooltip"><a href="/dv/lecture-11">Lecture 11</a><span class="right bottom"><span class="tooltip-title">Lecture 11</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 12 - 22 April 2025.pdf<br />
+                        <br />
+                        <br />
+                        Odds and Endings<br />
+                        Morning<br />
+                        <br />
+                        Reading: When statistics become stories | Gurman Bhatia<br />
+                        <br />
+                        <br />
+                        Afternoon<br />
+                        <br />
+                        Presentations - Exercise - Self Vi...</span><i></i></span></span> - Lying and Bias</h4>
+                <p><em>8 April 2025</em></p>
+                <h4 id="lecture-12---data-and-motion"><span class="tooltip"><a href="/dv/lecture-12">Lecture 12</a><span class="right bottom"><span class="tooltip-title">Lecture 12</span><br/>
+                      <span class="tooltip-excerpt"><br />
+                        Link to Slides<br />
+                        Data Viz - Lecture 12 - 22 April 2025.pdf<br />
+                        <br />
+                        <br />
+                        Endsem Presentations<br />
+                        <br />
+                        This day is for grading and goodbyes.<br />
+                        <br />
+                        Morning<br />
+                        <br />
+                        Presentations Project - Endsem Project<br />
+                        <br />
+                        <br />
+                        Afternoon<br />
+                        <br />
+                        Prese...</span><i></i></span></span> - Data and Motion</h4>
+                <p><em>15 April 2025</em></p>
+                <h4 id="lecture-13---interactive-visualisations--dashboards"><span class="tooltip"><a class="stale-link" href="javascript:void(0)">Lecture 13</a> <span class="right bottom"> <span class="tooltip-title">Note does not exist</span><br/>
+                      <span class="tooltip-excerpt">This note is has not been published (yet). <br/>
+                      </span> </span></span> - Interactive Visualisations / Dashboards</h4>
+                <p><em>22 April 2025</em></p>
+                <h4 id="endterm-exam">Endterm Exam</h4>
+                <p><em>After 30 April 2025</em></p>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/syllabus">
+                      <h6>Syllabus</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Lectures · Grading
+                        Subject Code: DD325
+                        Course Title: Data Visualization
+                        Jan to May 202...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/grading">
+                      <h6>Grading</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Lectures
+                        Data Visualization Course Grading Plan
+                        Assessment and Grading B...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

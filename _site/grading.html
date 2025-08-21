@@ -1,0 +1,376 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Grading" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/grading" property="og:url"><title>Grading - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/grading" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Grading</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <p>See also: <span class="tooltip"><a href="/dv/syllabus">Syllabus</a><span class="right bottom"><span class="tooltip-title">Syllabus</span><br/>
+                      <span class="tooltip-excerpt">See also: Lectures · Grading<br />
+                        <br />
+                        Subject Code: DD325<br />
+                        Course Title: Data Visualization<br />
+                        Jan to May 2025<br />
+                        <br />
+                        Course Objective: Learn to use data as a design material to exhibit, explore, explain, ex...</span><i></i></span></span> · <span class="tooltip"><a href="/dv/lectures">Lectures</a><span class="right bottom"><span class="tooltip-title">Lectures</span><br/>
+                      <span class="tooltip-excerpt">See also: Syllabus · Grading<br />
+                        <br />
+                        Tuesdays<br />
+                        <br />
+                        10am - 12:30pm Lectures + Studio<br />
+                        1pm - 2pm Lunch Break<br />
+                        2pm - 5pm Presentations + Exercises<br />
+                        Lecture 1 - Data and Information<br />
+                        7 Janua...</span><i></i></span></span></p>
+                <h2 id="data-visualization-course-grading-plan">Data Visualization Course Grading Plan</h2>
+                <h3 id="assessment-and-grading-breakdown">Assessment and Grading Breakdown</h3>
+                <p>Your performance in this course will be evaluated across the following components, each designed to assess your participation, understanding, and practical application of data visualization concepts discussed in the class.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Component</th>
+                      <th>Weightage (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Attendance and Class Participation</td>
+                      <td>10%</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Class Exercises</td>
+                      <td>40%</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Midsem Project</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Midsem Exam</td>
+                      <td>5%</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Final Project</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Final Exam</td>
+                      <td>5%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="1-attendance-and-class-participation-10">1. Attendance and Class Participation (10%)</h4>
+                <p>Attendance reflects your consistent engagement with the course and is recorded for both the Morning Session (10:00 AM - 12:30 PM) and the Afternoon Session (1:30 PM - 3:30 PM) each Tuesday.</p>
+                <ul>
+                  <li>Attendance cut-off times: 10:30 AM for the morning session and 1:30 PM for the afternoon session.</li>
+                </ul>
+                <p>I have an open door policy and if you need to take a break or leave, feel free to do so. The penalty is that you don't get the attendance credit and don't learn from the material. No distinction is made between excused and unexcused absences. Late arrivals will not receive attendance credit but can still participate in class activities.</p>
+                <h4 id="2-class-exercises-40">2. Class Exercises (40%)</h4>
+                <p>Throughout the course, you will do in-class activities and deliver presentations about tools, techniques, and your own work during the course.</p>
+                <ul>
+                  <li>
+                    <p>You will present visualizations, techniques, and analyses related to course content during designated weeks, showcasing your ability to communicate data insights effectively.</p>
+                  </li>
+                  <li>
+                    <p>Each submission will be evaluated on the basis of Content Quality, Creativity/Originality, Presentation Skills, Time Management, Audience Interaction, etc. as applicable.</p>
+                  </li>
+                </ul>
+                <p>I will grade each of these submissions out of 8 and consider the best 5 scores.</p>
+                <ol>
+                  <li><span class="tooltip"><a href="/dv/exercise-data-visualisation-tools">Exercise - Data Visualisation Tools</a><span class="right bottom"><span class="tooltip-title">Exercise - Data Visualisation Tools</span><br/>
+                        <span class="tooltip-excerpt">Activity Details<br />
+                          <br />
+                          This page lists a number of Data Visualisation tools. Pick one of these tools using the signup sheet shared on the class group and prepare a 5 minute presentation on it. You can c...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-data-selfie">Exercise - Data Selfie</a><span class="right bottom"><span class="tooltip-title">Exercise - Data Selfie</span><br/>
+                        <span class="tooltip-excerpt">We are all producing data all the time!<br />
+                          <br />
+                          <br />
+                          Phone calls<br />
+                          Emails/Whatsapp messages<br />
+                          Health/fitness data<br />
+                          Instagram likes<br />
+                          Screen time/App usage Attendance marking<br />
+                          Location sharing/history<br />
+                          Br...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-three-ways-of-visualising">Exercise - Three Ways of Visualising</a><span class="right bottom"><span class="tooltip-title">Exercise - Three Ways of Visualising</span><br/>
+                        <span class="tooltip-excerpt">Reference Material<br />
+                          <br />
+                          See Which Chart to Use for a list of reference material that show the different types of visualisations and the types of charts that can be used to represent them.<br />
+                          <br />
+                          Instruct...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-critique-and-redesign">Exercise - Critique and Redesign</a><span class="right bottom"><span class="tooltip-title">Exercise - Critique and Redesign</span><br/>
+                        <span class="tooltip-excerpt">Reference Material<br />
+                          <br />
+                          See Which Chart to Use for a list of reference material that show the different types of data and the types of charts that can be used to represent them.<br />
+                          <br />
+                          Instructions<br />
+                          <br />
+                          Crea...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-self-visualising-information">Exercise - Self Visualising Information</a><span class="right bottom"><span class="tooltip-title">Exercise - Self Visualising Information</span><br/>
+                        <span class="tooltip-excerpt">Data doesn’t always need to be collected and processed to be seen—it often visualises itself in the physical world. By observing our surroundings, we can uncover naturally occurring data visualisat...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-style-a-map">Exercise - Style a Map</a><span class="right bottom"><span class="tooltip-title">Exercise - Style a Map</span><br/>
+                        <span class="tooltip-excerpt">Find maps or other images that inspire you<br />
+                          <br />
+                          Create a moodboard. Some sources could be:<br />
+                          <br />
+                          <br />
+                          David Rumsey Historical Map Collection<br />
+                          OldMapsOnline<br />
+                          Create Color Palette inspired by the colors you...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-dashboard-design">Exercise - Dashboard Design</a><span class="right bottom"><span class="tooltip-title">Exercise - Dashboard Design</span><br/>
+                        <span class="tooltip-excerpt">I didn't want to give everyone in the class the exact same exercise, and I want everyone to have a sample dataset so there are restrictions similar to a real life visualisation problem. Use the pro...</span><i></i></span></span></li>
+                  <li><span class="tooltip"><a href="/dv/exercise-schematic-maps">Exercise - Schematic Maps</a><span class="right bottom"><span class="tooltip-title">Exercise - Schematic Maps</span><br/>
+                        <span class="tooltip-excerpt">Credits<br />
+                          <br />
+                          This exercise is based on Rasagy's Schematic Map exercise. You can watch his Outlier 2022 talk Scheming Against Accurate Maps on Youtube and check out Map School on GitHub.<br />
+                          <br />
+                          Step 1 - Where...</span><i></i></span></span></li>
+                </ol>
+                <h4 id="3-midsem-project-20">3. Midsem Project (20%)</h4>
+                <p>The midterm project is a group project (groups up to 3). See <span class="tooltip"><a href="/dv/project-midsem-project">Project - Midsem Project</a><span class="right bottom"><span class="tooltip-title">Project - Midsem Project</span><br/>
+                      <span class="tooltip-excerpt">A Week in Data<br />
+                        <br />
+                        Track personal habits (sleep, screen time, food intake, mood) and use what you learnt about data visualisation to create a data story that represents your lifestyle. Try and track a...</span><i></i></span></span>.</p>
+                <p>Team projects encourage collaboration. You should work together on all parts of the project, and should ensure that every team member is involved in all aspects of the project. The team will receive a single grade.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Facets</th>
+                      <th>Maximum Points</th>
+                      <th>Evaluation Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Punctuality</td>
+                      <td>2</td>
+                      <td>Submitting proposal (1) and final deliverable (1) by due date.</td>
+                    </tr>
+                    <tr>
+                      <td>Project Concept</td>
+                      <td>3</td>
+                      <td>Impactfulness, uniqueness of area of exploration. Evaluated based on project proposal.</td>
+                    </tr>
+                    <tr>
+                      <td>Data Collection</td>
+                      <td>5</td>
+                      <td>Quality of data collection and research.</td>
+                    </tr>
+                    <tr>
+                      <td>Data Visualisation</td>
+                      <td>5</td>
+                      <td>Effectiveness of visualisation. Choice of marks and channels.</td>
+                    </tr>
+                    <tr>
+                      <td>Visual Design of Final Submission</td>
+                      <td>5</td>
+                      <td>Aesthetics, final execution and storytelling.</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>20</td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="5-midsem-exam-5">5. Midsem Exam (5%)</h4>
+                <p>Written exam conducted by university.</p>
+                <h4 id="4-final-project-20">4. Final Project (20%)</h4>
+                <p>The midterm project is a group project (groups up to 3) due end of April. See <span class="tooltip"><a href="/dv/project-endsem-project">Project - Endsem Project</a><span class="right bottom"><span class="tooltip-title">Project - Endsem Project</span><br/>
+                      <span class="tooltip-excerpt">Expected time available to work on this project is about 2 weeks, so the scope for the project is similiar to Midsem projects.<br />
+                        <br />
+                        Option 1 - Expand on your midsem project<br />
+                        <br />
+                        If you felt there was more ...</span><i></i></span></span>.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Criteria</th>
+                      <th>Marks</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Timeliness</td>
+                      <td>1</td>
+                      <td>Proposal and final project submitted on time.</td>
+                    </tr>
+                    <tr>
+                      <td>Idea &amp; Insights</td>
+                      <td>3</td>
+                      <td>Originality of concept and depth of thinking or hypothesis.</td>
+                    </tr>
+                    <tr>
+                      <td>Data &amp; Research</td>
+                      <td>4</td>
+                      <td>Quality of data collection, sources, and how well it's handled.</td>
+                    </tr>
+                    <tr>
+                      <td>Visualisation</td>
+                      <td>4</td>
+                      <td>Clear and effective use of charts, graphs, or visuals to show the data.</td>
+                    </tr>
+                    <tr>
+                      <td>Design &amp; Execution</td>
+                      <td>4</td>
+                      <td>Aesthetic quality, clarity, and technical accuracy of the final outcome.</td>
+                    </tr>
+                    <tr>
+                      <td>Presentation</td>
+                      <td>4</td>
+                      <td>Communication during presentation and quality of documentation.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Total</strong></td>
+                      <td><strong>20</strong></td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="5-endsem-exam-5">5. Endsem Exam (5%)</h4>
+                <p>Written exam conducted by university.</p>
+                <h3 id="academic-integrity">Academic Integrity</h3>
+                <p>All submissions must be original and properly cite any third-party materials used, including datasets and code fragments. For group projects, the contributions of each team member must be clearly documented. Violations of academic integrity will be handled according to institutional policies.</p>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/lectures">
+                      <h6>Lectures</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Grading
+                        Tuesdays
+                        10am  12:30pm Lectures + Studio
+                        1pm  2pm Lunch Break
+                        ...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/syllabus">
+                      <h6>Syllabus</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Lectures · Grading
+                        Subject Code: DD325
+                        Course Title: Data Visualization
+                        Jan to May 202...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

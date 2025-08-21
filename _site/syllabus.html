@@ -1,0 +1,400 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Syllabus" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/syllabus" property="og:url"><title>Syllabus - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/syllabus" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Syllabus</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <p>See also: <span class="tooltip"><a href="/dv/lectures">Lectures</a><span class="right bottom"><span class="tooltip-title">Lectures</span><br/>
+                      <span class="tooltip-excerpt">See also: Syllabus · Grading<br />
+                        <br />
+                        Tuesdays<br />
+                        <br />
+                        10am - 12:30pm Lectures + Studio<br />
+                        1pm - 2pm Lunch Break<br />
+                        2pm - 5pm Presentations + Exercises<br />
+                        Lecture 1 - Data and Information<br />
+                        7 Janua...</span><i></i></span></span> · <span class="tooltip"><a href="/dv/grading">Grading</a><span class="right bottom"><span class="tooltip-title">Grading</span><br/>
+                      <span class="tooltip-excerpt">See also: Syllabus · Lectures<br />
+                        <br />
+                        Data Visualization Course Grading Plan<br />
+                        <br />
+                        Assessment and Grading Breakdown<br />
+                        <br />
+                        Your performance in this course will be evaluated across the following components, e...</span><i></i></span></span></p>
+                <p><strong>Subject Code:</strong> DD325
+                  <strong>Course Title:</strong> Data Visualization
+                  Jan to May 2025</p>
+                <p><strong>Course Objective:</strong> Learn to use data as a design material to exhibit, explore, explain, experience and enable.</p>
+                <p><strong>Contact Hours:</strong></p>
+                <ul>
+                  <li><strong>Lecture (L):</strong> 1</li>
+                  <li><strong>Tutorial (T):</strong> 0</li>
+                  <li><strong>Studio (S):</strong> 6</li>
+                </ul>
+                <p><strong>Studio Hours:</strong> 4
+                  <strong>Examination Duration (Hrs):</strong></p>
+                <ul>
+                  <li><strong>CWS:</strong> 10</li>
+                  <li><strong>STS:</strong> 40</li>
+                  <li><strong>MTE:</strong> 10</li>
+                  <li><strong>ETE:</strong> 20</li>
+                  <li><strong>STE:</strong> 20</li>
+                </ul>
+                <p><strong>Credit:</strong> 4
+                  <strong>Semester:</strong> 6th</p>
+                <h3 id="course-syllabus">Course Syllabus</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><strong>S. No.</strong></th>
+                      <th><strong>Contents</strong></th>
+                      <th><strong>Contact Weeks</strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Importance of data visualization; Data and image models; Visualization Design</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Color; Space; Data Analysis; Multi-Dimensional data; Graphical Perception</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Visualization Software; Interactive Visualization; Animation in Visualization</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Mapping and cartography; Narrative; Text Visualization</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Total</strong></td>
+                      <td> </td>
+                      <td><strong>14</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h1 id="detailed-structure">Detailed Structure</h1>
+                <h4 id="data-and-information">Data and Information</h4>
+                <ul>
+                  <li>Data, Information, Knowledge, Wisdom</li>
+                  <li><strong>Exercise:</strong> <span class="tooltip"><a href="/dv/exercise-data-selfie">Exercise - Data Selfie</a><span class="right bottom"><span class="tooltip-title">Exercise - Data Selfie</span><br/>
+                        <span class="tooltip-excerpt">We are all producing data all the time!<br />
+                          <br />
+                          <br />
+                          Phone calls<br />
+                          Emails/Whatsapp messages<br />
+                          Health/fitness data<br />
+                          Instagram likes<br />
+                          Screen time/App usage Attendance marking<br />
+                          Location sharing/history<br />
+                          Br...</span><i></i></span></span></li>
+                  <li>What can we do with data?</li>
+                  <li>Exhibit, Explain, Explore, Experience, Enable</li>
+                  <li>Data to Information</li>
+                  <li>Forming insights</li>
+                  <li>Levels of Measurement</li>
+                  <li>Conceptual v/s Measurable Data</li>
+                  <li>Infographics</li>
+                  <li>What separates illustrations from infographics?
+                    <h4 id="types-of-data">Types of Data</h4>
+                  </li>
+                  <li><strong>Exercise:</strong> <span class="tooltip"><a href="/dv/exercise-pin-point">Exercise - PIN Point</a><span class="right bottom"><span class="tooltip-title">Exercise - PIN Point</span><br/>
+                        <span class="tooltip-excerpt">Dataset<br />
+                          <br />
+                          Download this dataset of synthetic PIN card numbers from Kaggle. Open the .csv file in either a text editor or Microsoft Excel or Google Sheets to see the values.<br />
+                          <br />
+                          PIN Data | Kaggle<br />
+                          <br />
+                          Are y...</span><i></i></span></span></li>
+                  <li>Structured data (Tables)</li>
+                  <li>Semi-structured data</li>
+                  <li>Unstructured data (Longform text, images, audio, film)
+                    <h4 id="exploring-structured-data">Exploring Structured data</h4>
+                  </li>
+                  <li>Dimensions in data</li>
+                  <li>Basic Stats</li>
+                  <li>Spreadsheets for exploring data</li>
+                  <li><strong>Exercise:</strong> <span class="tooltip"><a href="/dv/exercise-explore-a-dataset">Exercise - Explore a Dataset</a><span class="right bottom"><span class="tooltip-title">Exercise - Explore a Dataset</span><br/>
+                        <span class="tooltip-excerpt">Instructions<br />
+                          <br />
+                          Find a dataset in an area that you are interested in. For the purpose of this exercise, avoid text heavy datasets and image datasets. Make sure there are at least 4 features in the da...</span><i></i></span></span></li>
+                  <li><strong>Exercise:</strong> <span class="tooltip"><a href="/dv/exercise-explore-a-dataset">Exercise - Explore a Dataset</a><span class="right bottom"><span class="tooltip-title">Exercise - Explore a Dataset</span><br/>
+                        <span class="tooltip-excerpt">Instructions<br />
+                          <br />
+                          Find a dataset in an area that you are interested in. For the purpose of this exercise, avoid text heavy datasets and image datasets. Make sure there are at least 4 features in the da...</span><i></i></span></span> with AI!</li>
+                  <li>Identifying outliers and trends</li>
+                  <li>Simple visualisations inside spreadsheets</li>
+                  <li>Measures of central tendency - mean, median, mode</li>
+                  <li>Frequency</li>
+                  <li>Exploratory Data Analysis - simple charts to uncover trends
+                    <h4 id="text-as-data">Text as Data</h4>
+                  </li>
+                  <li>Qualitative vs. quantitative aspects (word counts, context, sentiment).</li>
+                  <li>Challenges of analyzing unstructured text.</li>
+                  <li>Word clouds, phrase nets, topic modeling visualizations</li>
+                  <li>Leveraging NLP (Natural Language Processing) techniques for deeper insights.
+                    <h4 id="images-as-data">Images as Data</h4>
+                  </li>
+                  <li>Raster and vector images</li>
+                  <li>What are images made of?</li>
+                  <li>Time spent on campus - Rasagy's map of entry, exit</li>
+                  <li>Sky maps over covid</li>
+                  <li>Data models - Films as data</li>
+                  <li><a href="https://rasagy.in/500days/">Visualizing 500 Days of Summer by @rasagy</a></li>
+                  <li><a href="https://www.smartjava.org/examples/movie-viz/batman.html">Visualization of movies - Part II - The Batman Trilogy</a></li>
+                </ul>
+                <h4 id="marks--channels">Marks &amp; Channels</h4>
+                <ul>
+                  <li>Encoding Data into Visuals</li>
+                  <li><span class="tooltip"><a href="/dv/marks-and-channels">Marks and Channels</a><span class="right bottom"><span class="tooltip-title">Marks and Channels</span><br/>
+                        <span class="tooltip-excerpt">Marks<br />
+                          <br />
+                          Marks are the the basic geometries, or graphical elements, in a plot that depict our data items or their linkages.<br />
+                          <br />
+                          <br />
+                          Points<br />
+                          Lines<br />
+                          Area<br />
+                          Volume<br />
+                          Containment<br />
+                          Connection<br />
+                          Channels<br />
+                          ...</span><i></i></span></span></li>
+                  <li>Picking the right visualisation type</li>
+                  <li><strong>Exercise:</strong> <span class="tooltip"><a href="/dv/exercise-three-ways-of-visualising">Exercise - Three Ways of Visualising</a><span class="right bottom"><span class="tooltip-title">Exercise - Three Ways of Visualising</span><br/>
+                        <span class="tooltip-excerpt">Reference Material<br />
+                          <br />
+                          See Which Chart to Use for a list of reference material that show the different types of visualisations and the types of charts that can be used to represent them.<br />
+                          <br />
+                          Instruct...</span><i></i></span></span></li>
+                  <li>Common mistakes <a href="https://viz.wtf/">WTF Visualizations</a> · <a href="https://www.data-to-viz.com/caveats.html">Data to Viz Caveats</a>
+                    <h4 id="graphical-perception">Graphical Perception</h4>
+                  </li>
+                  <li>Data-ink ratio</li>
+                  <li>Role of aesthetics, clarity, and function in effective visuals.</li>
+                  <li>Gestalt principles</li>
+                  <li>Minimizing visual clutter and maximizing information density</li>
+                  <li>Contrast, Alignment, Repetition, Proximity</li>
+                  <li>Accuracy of Different Chart Types - Cleveland and McGill studies on how people interpret lengths, angles, and areas.</li>
+                  <li><strong>Visual Encoding:</strong> Color, Shape, Size</li>
+                  <li>Color wheels, complementary, analogous, triadic color schemes.</li>
+                  <li>Color for cartography</li>
+                  <li>Perceptual aspects of color (simultaneous contrast, color blindness considerations).</li>
+                  <li><strong>Visual Design:</strong> Typography, Spacing, Emphasis</li>
+                  <li>Plane graphic</li>
+                  <li>Negative space
+                    <h4 id="types-of-charts">Types of Charts</h4>
+                  </li>
+                  <li><a href="https://www.data-to-viz.com/">From Data to Viz</a></li>
+                  <li><a href="https://datavizproject.com/">Data Viz Project</a></li>
+                  <li><a href="https://github.com/Financial-Times/chart-doctor/blob/main/visual-vocabulary/FT4schools_RGS.pdf">Visual Vocabulary Poster - Financial Times </a></li>
+                  <li><a href="https://www.dropbox.com/s/ggmmqdvnjlapke5/DVHB_VisualVariables_A3.pdf?dl=0">Visual variables sheet - Data Viz Handbook</a></li>
+                </ul>
+                <h4 id="making-good-charts">Making Good Charts</h4>
+                <ul>
+                  <li><strong>Tufte: Data-ink ratio</strong></li>
+                  <li>
+                    <p>Ben Schneiderman’s Visualization Mantra: “Overview first, zoom and filter, then details on demand.”</p>
+                  </li>
+                  <li>How structure influences the visualization form</li>
+                  <li>tree diagrams, node-link diagrams</li>
+                  <li>Bar, line, pie, scatter plots, etc.</li>
+                </ul>
+                <h4 id="lying-with-data--data-and-truth">Lying with Data // Data and Truth</h4>
+                <ul>
+                  <li>Zomato rider payout</li>
+                  <li>Correlation causation</li>
+                  <li>Alberto Cairo - How Charts Lie</li>
+                  <li>What can be measured? Literacy rate - what is literate?</li>
+                  <li>Rich people by state - tax returns &gt;1cr</li>
+                  <li>Ethics in Data Visualisation</li>
+                  <li><a href="https://pudding.cool/2020/10/photo-history/">Photo quiz: This is an experiment about how we view history</a></li>
+                  <li>Data bias - where can it come from</li>
+                  <li>Histories - data x design, staged photographs</li>
+                  <li>Misleading graphics</li>
+                  <li>Common fallacies</li>
+                  <li>Spurious correlations</li>
+                </ul>
+                <h4 id="storytelling-with-data">Storytelling with data</h4>
+                <ul>
+                  <li>Structuring data narratives with a clear beginning, middle, and end.</li>
+                  <li>Who is this for?</li>
+                  <li><a href="https://www.youtube.com/watch?v=jbkSRLYSojo">Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats - BBC - YouTube</a></li>
+                  <li>New York Times interactive visual stories.</li>
+                  <li>Gapminder (Hans Rosling) for data-driven storytelling.</li>
+                  <li>Finding datasets</li>
+                  <li>Exploring datasets</li>
+                  <li>Finding insights</li>
+                </ul>
+                <h4 id="geospatial-visualisations">Geospatial visualisations</h4>
+                <ul>
+                  <li>Mapping and cartography</li>
+                  <li>History of maps</li>
+                  <li><a href="https://senseable.mit.edu/">MIT Senseable City Lab</a></li>
+                  <li>Relevant <a href="https://xkcd.com/977/">xkcd: Map Projections</a></li>
+                  <li>With a large enough sample size everything is a population map <a href="https://xkcd.com/1138/">xkcd: Heatmap</a> <a href="https://www.reddit.com/r/dataisbeautiful/comments/zkercv/oc_geospatial_density_of_the_biggest_fast_food/">[OC] Geospatial density of the biggest fast food chains in the USA : r/dataisbeautiful</a></li>
+                  <li>Exercise: Making a map</li>
+                  <li>Contributing to OpenStreetMap</li>
+                  <li>Projections (Mercator, Robinson, etc.), scale, and symbolization.</li>
+                  <li>Mapping statistical data (choropleth, proportional symbol maps).</li>
+                  <li><strong>Exercise</strong> Schematic Maps</li>
+                  <li>India in Pixels -</li>
+                  <li><a href="https://www.youtube.com/watch?v=p1uxZMGyX6E">Ashris Choudhury—Outlier 2021—Narrating a Nation Through Numbers: India in Pixels - YouTube</a>
+                    <h4 id="motion-in-data-visualisations">Motion in Data Visualisations</h4>
+                  </li>
+                  <li>What can motion add?</li>
+                  <li>Shows temporal trends effectively.</li>
+                  <li><a href="https://ferdio.com/en/work/statistics-denmark-100-people/">If Denmark was 100 people - Ferdio</a>
+                    <h4 id="interactive-data-dashboards">Interactive Data Dashboards</h4>
+                  </li>
+                  <li>Engages users, allows exploration of data from different angles. Encourages personal discovery and deeper insight.</li>
+                  <li>Data Interfaces</li>
+                  <li>Sci fi interfaces</li>
+                  <li><a href="https://histography.io/">Histography - Timeline of History</a></li>
+                  <li>
+                    <p><a href="https://royalconstellations.visualcinnamon.com/">Royal Constellations</a></p>
+                  </li>
+                  <li>Accessibility <a href="https://developer.apple.com/videos/play/wwdc2021/10122/">Bring accessibility to charts in your app - WWDC21 - Videos - Apple Developer</a></li>
+                  <li><a href="https://accessibility.huit.harvard.edu/data-viz-charts-graphs">Data Visualizations, Charts, and Graphs | Digital Accessibility​</a>w</li>
+                </ul>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/lectures">
+                      <h6>Lectures</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Grading
+                        Tuesdays
+                        10am  12:30pm Lectures + Studio
+                        1pm  2pm Lunch Break
+                        ...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/grading">
+                      <h6>Grading</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Lectures
+                        Data Visualization Course Grading Plan
+                        Assessment and Grading B...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

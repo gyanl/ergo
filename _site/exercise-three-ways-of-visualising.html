@@ -1,0 +1,274 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Exercise - Three Ways of Visualising" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/exercise-three-ways-of-visualising" property="og:url"><title>Exercise - Three Ways of Visualising - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/exercise-three-ways-of-visualising" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Exercise - Three Ways of Visualising</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <h3 id="reference-material">Reference Material</h3>
+                <p>See <span class="tooltip"><a href="/dv/which-chart-to-use">Which Chart to Use</a><span class="right bottom"><span class="tooltip-title">Which Chart to Use</span><br/>
+                      <span class="tooltip-excerpt">From Data to Viz<br />
+                        <br />
+                        Find the graphic you need. Has a handy flow chart to decide on the basis of what your data looks like.<br />
+                        <br />
+                        Data Viz Project<br />
+                        <br />
+                        Collections of data visualizations to get inspired and fi...</span><i></i></span></span> for a list of reference material that show the different types of visualisations and the types of charts that can be used to represent them.</p>
+                <h3 id="instructions">Instructions</h3>
+                <p>Find a small table of data that has at least 2x3 cells of data. Use the types of visualisations listed in the Data Viz Project to find 3 different ways to visualise this data. Try and use unusual ways to represent the data, if you can come up with something that's not in the website that's a bonus.</p>
+                <p>Here are some examples of tables:</p>
+                <h4 id="streaming-service-usage-by-time-of-day">Streaming Service Usage by Time of Day</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><strong>Time of Day</strong></th>
+                      <th><strong>Service A</strong></th>
+                      <th><strong>Service B</strong></th>
+                      <th><strong>Service C</strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Morning</td>
+                      <td>220 users</td>
+                      <td>180 users</td>
+                      <td>95 users</td>
+                    </tr>
+                    <tr>
+                      <td>Evening</td>
+                      <td>400 users</td>
+                      <td>290 users</td>
+                      <td>240 users</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="average-test-scores-by-subject-and-class">Average Test Scores by Subject and Class</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><strong>Class</strong></th>
+                      <th style="text-align: right"><strong>Math</strong></th>
+                      <th style="text-align: right"><strong>Science</strong></th>
+                      <th style="text-align: right"><strong>History</strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Class A</td>
+                      <td style="text-align: right">78</td>
+                      <td style="text-align: right">85</td>
+                      <td style="text-align: right">90</td>
+                    </tr>
+                    <tr>
+                      <td>Class B</td>
+                      <td style="text-align: right">88</td>
+                      <td style="text-align: right">79</td>
+                      <td style="text-align: right">92</td>
+                    </tr>
+                    <tr>
+                      <td>Class C</td>
+                      <td style="text-align: right">71</td>
+                      <td style="text-align: right">83</td>
+                      <td style="text-align: right">88</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 id="seasonal-temperatures-in-4-cities">Seasonal Temperatures in 4 Cities</h4>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><strong>Season</strong></th>
+                      <th style="text-align: right"><strong>City A</strong></th>
+                      <th style="text-align: right"><strong>City B</strong></th>
+                      <th style="text-align: right"><strong>City C</strong></th>
+                      <th>City D</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Winter</td>
+                      <td style="text-align: right">5°C</td>
+                      <td style="text-align: right">2°C</td>
+                      <td style="text-align: right">-1°C</td>
+                      <td>3°C</td>
+                    </tr>
+                    <tr>
+                      <td>Summer</td>
+                      <td style="text-align: right">24°C</td>
+                      <td style="text-align: right">29°C</td>
+                      <td style="text-align: right">19°C</td>
+                      <td>24°C</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3 id="submission-format">Submission format</h3>
+                <p>3 minute presentation with:</p>
+                <ul>
+                  <li>Your table of data along with the source, and <span class="tooltip"><a href="/dv/levels-of-measurement">Levels of Measurement</a><span class="right bottom"><span class="tooltip-title">Levels of Measurement</span><br/>
+                        <span class="tooltip-excerpt">Data Measurement Scales<br />
+                          <br />
+                          These scales describe how data can be categorized, ranked, or measured with varying degrees of precision. Below are four common data types—Nominal, Ordinal, Interval, and R...</span><i></i></span></span> identified</li>
+                  <li>3 Visualisations with <span class="tooltip"><a href="/dv/marks-and-channels">Marks and Channels</a><span class="right bottom"><span class="tooltip-title">Marks and Channels</span><br/>
+                        <span class="tooltip-excerpt">Marks<br />
+                          <br />
+                          Marks are the the basic geometries, or graphical elements, in a plot that depict our data items or their linkages.<br />
+                          <br />
+                          <br />
+                          Points<br />
+                          Lines<br />
+                          Area<br />
+                          Volume<br />
+                          Containment<br />
+                          Connection<br />
+                          Channels<br />
+                          ...</span><i></i></span></span> for each</li>
+                  <li>Any interesting takeaways in finding the data, creating the visualisation, or choices of visualisation.</li>
+                </ul>
+                <p>If you are struggling with digital tools, you can:</p>
+                <ul>
+                  <li>Partly generate the chart with Google Sheets/Excel/etc. and then take it into Figma/Photoshop to add things on top of it</li>
+                  <li>Draw it on paper</li>
+                </ul>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/syllabus">
+                      <h6>Syllabus</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Lectures · Grading
+                        Subject Code: DD325
+                        Course Title: Data Visualization
+                        Jan to May 202...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/grading">
+                      <h6>Grading</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Lectures
+                        Data Visualization Course Grading Plan
+                        Assessment and Grading Bre...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/lecture-3">
+                      <h6>Lecture 3</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">&gt; Link to Slides
+                        &gt; [Data Viz  Lecture 3a  21 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/lecture-4">
+                      <h6>Lecture 4</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">&gt; Link to Slides
+                        &gt; [Data Viz  Lecture 4  28 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/D...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

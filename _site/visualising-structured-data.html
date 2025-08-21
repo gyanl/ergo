@@ -1,0 +1,234 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Visualising Structured Data" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/visualising-structured-data" property="og:url"><title>Visualising Structured Data - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/visualising-structured-data" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Visualising Structured Data</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <p><strong>What Can We Do with Data?</strong>
+                  Below is an overview of five main approaches to working with data, along with potential outcomes and examples.</p>
+                <p><a href="https://www.visualcinnamon.com/">An Award-winning Data Visualization Designer | Visual Cinnamon</a></p>
+                <h3 id="data-viz-project--collection-of-data-visualizations-to-get-inspired-and-find-the-right-type"><a href="https://datavizproject.com/">Data Viz Project | Collection of data visualizations to get inspired and find the right type</a></h3>
+                <p><a href="https://flowingdata.com/">FlowingData - Data Visualization and Statistics</a></p>
+                <h2 id="1-exhibit">1. Exhibit</h2>
+                <p><strong>Goal</strong>: Present raw data in a clear, straightforward manner.  </p>
+                <p><strong>Techniques</strong>:  </p>
+                <ul>
+                  <li>
+                    <p><strong>List</strong>:Organized bullet points or enumerations of data.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Table</strong>: Rows and columns to compare different aspects easily.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Infographic</strong>: Visually striking displays that combine text, charts, and icons to convey key data points.  </p>
+                  </li>
+                </ul>
+                <p><strong>Example</strong>  </p>
+                <ul>
+                  <li>A public dataset of city populations displayed in a table for quick reference.  </li>
+                </ul>
+                <p><strong>Reference</strong>  </p>
+                <ul>
+                  <li>Edward Tufte’s concept of the “data-ink ratio”: <a href="https://www.edwardtufte.com/tufte/">Edward Tufte Website</a></li>
+                </ul>
+                <hr />
+                <h2 id="2-explain">2. Explain</h2>
+                <p><strong>Goal</strong>: Provide clear answers to questions through structured analysis and storytelling.  </p>
+                <p><strong>Techniques</strong>:  </p>
+                <ul>
+                  <li>
+                    <p><strong>Data Journalism</strong>: Articles or news stories underpinned by data-driven evidence.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Report</strong>: Formal documentation that organizes findings, interpretations, and conclusions.  </p>
+                  </li>
+                </ul>
+                <p><strong>Example</strong>  </p>
+                <ul>
+                  <li>A news article explaining election results supported by interactive charts.  </li>
+                </ul>
+                <h1 id="data-storytelling">Data Storytelling</h1>
+                <h3 id="dear-data"><a href="https://www.dear-data.com/theproject">Dear Data</a></h3>
+                <p>Dear Data is a year-long, analog data drawing project by Giorgia Lupi and Stefanie Posavec, two award-winning information designers living on different sides of the Atlantic. By collecting and hand drawing their personal data and sending it to each other in the form of postcards, they became friends.</p>
+                <h3 id="what-goes-on-at-213"><a href="https://sva.design/projects/17438/what-goes-on-at-213/">What Goes On At 213</a></h3>
+                <p>A pocket-book zine showing data visualization through illustration. San Myeong Kim observed people walking past this one door on East 23rd Street and took note of their peculiarities and illustrated them. They pose this question: In a space where infographics is created and consumed entirely digitally, how can I re-incorporate the raw handwritten quality to data visualization (in a fun, silly way)?</p>
+                <p><strong>Reference</strong>  </p>
+                <ul>
+                  <li><em>The Data Journalism Handbook</em>: <a href="https://datajournalism.com/read/handbook">https://datajournalism.com/read/handbook</a></li>
+                </ul>
+                <hr />
+                <h2 id="3-explore">3. Explore</h2>
+                <p><strong>Goal</strong>: Investigate the data to discover patterns, trends, or questions you didn’t know to ask.  </p>
+                <p><strong>Techniques</strong>:  </p>
+                <ul>
+                  <li>
+                    <p><strong>Dashboards</strong>: Interactive interfaces showing multiple linked visualizations.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Simulations</strong>: Models allowing “what-if” analyses or scenario testing.  </p>
+                  </li>
+                </ul>
+                <p><strong>Example</strong>  </p>
+                <ul>
+                  <li>A real-time business intelligence dashboard that alerts users to unusual sales patterns.  </li>
+                </ul>
+                <h3 id="the-life-and-death-of-data"><a href="https://lifeanddeathofdata.org/">The Life and Death of Data</a></h3>
+                <h3 id="tied-in-knots"><a href="https://tiedinknots.io/#/">Tied in Knots</a></h3>
+                <p><strong>Reference</strong>  </p>
+                <ul>
+                  <li>Ben Shneiderman’s mantra: “Overview first, zoom and filter, then details on demand.”</li>
+                </ul>
+                <hr />
+                <h2 id="4-experience">4. Experience</h2>
+                <p><strong>Goal</strong>: Reveal deeper meaning or evoke an emotional/intuitive response through creative, immersive, or artistic representations.  </p>
+                <p><strong>Techniques</strong>:  </p>
+                <ul>
+                  <li>
+                    <p><strong>Data Art Piece</strong>: Artistic installations that transform data into sculpture or visual art.  </p>
+                  </li>
+                  <li>
+                    <p><strong>New Media Installation</strong>: Interactive exhibits where visitors can engage with data physically or virtually.  </p>
+                  </li>
+                </ul>
+                <p><strong>Example</strong>  </p>
+                <ul>
+                  <li>A museum piece visualizing climate change data as a dynamic art display that changes color over time.</li>
+                </ul>
+                <h1 id="data-art">Data Art</h1>
+                <h3 id="poppy-field"><a href="https://www.poppyfield.org/">Poppy Field</a></h3>
+                <p>Following the end of the First World War, the poppy became a symbol of commemoration. It was among the first plants to spring to life on Europe's devastated battlefields. Poppy Field reflects on the human cost of war</p>
+                <p>from the beginning of the 20th Century.</p>
+                <p><a href="https://paolocirio.net/work/climate-tribunal/">Climate Tribunal - Paolo CIRIO Artist</a></p>
+                <p><strong>Reference</strong>  </p>
+                <ul>
+                  <li>Lev Manovich’s work on cultural analytics and data art: <a href="http://manovich.net/">Software Studies Initiative</a></li>
+                </ul>
+                <hr />
+                <h2 id="5-enable">5. Enable</h2>
+                <p><strong>Goal</strong>: Develop specialized tools or platforms tailored to particular data visualization needs.  </p>
+                <p><strong>Techniques</strong>:  </p>
+                <ul>
+                  <li>
+                    <p><strong>Custom Software</strong>: Applications built to visualize specific datasets or domains.  </p>
+                  </li>
+                  <li>
+                    <p><strong>APIs and Libraries</strong>: Extensible codebases that empower broader data analysis and visualization.  </p>
+                  </li>
+                </ul>
+                <h3 id="data-by-design"><a href="https://dataxdesign.io/">Data by Design</a></h3>
+                <p>A digital book chronicling the history of data visualisation. By retelling the history of data visualization alongside the histories of colonialism and slavery, Data by Design shows how questions of ethics and justice have always been present—and continue to offer lessons to viewers and designers of data visualizations today.</p>
+                <h3 id="the-data-visualization-society"><a href="https://datavizsociety.org/">The Data Visualization Society</a></h3>
+                <p>The Data Visualization Society is a global community of data visualization professionals, educators, and enthusiasts.</p>
+                <h3 id="d3js"><a href="https://d3js.org">D3.js</a></h3>
+                <h3 id="data-visualization-society---youtube"><a href="https://www.youtube.com/@DataVisualizationSociety/videos">Data Visualization Society - YouTube</a></h3>
+              </div>
+              <!-- Add backlinks to the current page --></div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

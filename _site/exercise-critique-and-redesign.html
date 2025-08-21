@@ -1,0 +1,173 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Exercise - Critique and Redesign" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/exercise-critique-and-redesign" property="og:url"><title>Exercise - Critique and Redesign - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/exercise-critique-and-redesign" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Exercise - Critique and Redesign</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <h3 id="reference-material">Reference Material</h3>
+                <p>See <span class="tooltip"><a href="/dv/which-chart-to-use">Which Chart to Use</a><span class="right bottom"><span class="tooltip-title">Which Chart to Use</span><br/>
+                      <span class="tooltip-excerpt">From Data to Viz<br />
+                        <br />
+                        Find the graphic you need. Has a handy flow chart to decide on the basis of what your data looks like.<br />
+                        <br />
+                        Data Viz Project<br />
+                        <br />
+                        Collections of data visualizations to get inspired and fi...</span><i></i></span></span> for a list of reference material that show the different types of data and the types of charts that can be used to represent them.</p>
+                <h3 id="instructions">Instructions</h3>
+                <p>Create teams of 2. If you are comfortable with a visualisation tool, try pairing up with someone who is struggling.</p>
+                <p>The Hindu Publishes <a href="https://www.thehindu.com/data/">Data Stories</a> about a variety of topics. These stories find interesting data insights and present them to the reader.</p>
+                <p><a href="https://www.dataforindia.com/">Data For India</a> is a public platform that publishes stories about understanding India through the lens of data.</p>
+                <p>Find a story in an area that you like, and critique the choice of visualisation. Why does it work or not work for the data? Is it easy to read and understand? Does it support the point that the story is trying to make?</p>
+                <p>Then, try and come up with a better visualisation for the the same data. What did you change? Why is it better? Try using Flourish to make the redesigned visualisation.</p>
+                <p>Note: Some of the stories require a premium subscription to The Hindu. The rest can be accessed by creating a free account.</p>
+                <h3 id="submission-format">Submission format</h3>
+                <p>Upto 5 minute presentation with:</p>
+                <ul>
+                  <li>A link to the data story along with 3/4 key points that it makes.</li>
+                  <li>The visualisation(s) in the story that you want to redesign</li>
+                  <li>Issues identified with the existing visualisation</li>
+                  <li>Your redesigned visualisation</li>
+                  <li>What did you change? How is it better now?</li>
+                </ul>
+                <h3 id="faq">FAQ</h3>
+                <p><strong>I can't figure out where the article sourced the data from. What do I do?</strong></p>
+                <p>If you can back-calculate the data values from the chart, you can do that. If there are too many values and you feel like you'll spend too much time doing that, look for another story.</p>
+                <p><strong>Can I use a source other than the two listed here?</strong></p>
+                <p>Yes, but make sure it's a data journalism piece that is using data to tell a story or explain something.</p>
+              </div>
+              <!-- Add backlinks to the current page -->
+              <div class="related show" id="jekyll-seamless-backlinks">
+                <h5 class="meta-title centre-title">Links to this note</h5>
+                <div class="related-wrapper">
+                  <div class="related-group"><a href="/dv/grading">
+                      <h6>Grading</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">See also: Syllabus · Lectures
+                        Data Visualization Course Grading Plan
+                        Assessment and Grading Bre...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/lecture-4">
+                      <h6>Lecture 4</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">&gt; Link to Slides
+                        &gt; [Data Viz  Lecture 4  28 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/D...</p>
+                    </a></div>
+                  <div class="related-group"><a href="/dv/lecture-5">
+                      <h6>Lecture 5</h6>
+                      <p class="excerpt" style="margin: 0px; color: var(--color-text-main) !important;">&gt; Link to Slides
+                        &gt; [Data Viz  Lecture 5  4 Feb 2025.pdf](https://gyanl.com/dv/assets/pdf/Da...</p>
+                    </a></div>
+                  <!--
+        This code is to show other pages (note under collection) as Backlink. 
+        Disabled as I don't see a need for this right now.-->
+                </div>
+                <br/>
+              </div>
+            </div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

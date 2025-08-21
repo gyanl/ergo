@@ -1,0 +1,170 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Data Storytelling and Journalism" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/data-storytelling-and-journalism" property="og:url"><title>Data Storytelling and Journalism - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/data-storytelling-and-journalism" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout--><!--- Notes Layout-->
+          <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
+            <div class="note-page-section">
+              <!--- List type Note Layout-->
+              <h1>Data Storytelling and Journalism</h1>
+              <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+              <div class="content">
+                <p>Date of births</p>
+                <h2 id="the-significant-objects-experiment">The “Significant Objects” Experiment</h2>
+                <h2 id="overview">Overview</h2>
+                <ul>
+                  <li>
+                    <p><strong>Experiment</strong>: Rob Walker (a journalist) and Joshua Glenn (a writer and editor) conducted an experiment called “Significant Objects.” They bought inexpensive items—often small trinkets or knickknacks—for a total of about $250.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Method</strong>: They asked over 200 contributing writers to craft short, fictional stories about each object. These stories were then included in the items’ descriptions when put up for auction online.  </p>
+                  </li>
+                  <li>
+                    <p><strong>Result</strong>: Many of these ordinary items sold for far more than their original price. Collectively, the items purchased for $250 sold for over $8,000. This dramatic markup highlights the power of narrative in shaping consumer perception.</p>
+                  </li>
+                </ul>
+                <h2 id="why-it-matters">Why It Matters</h2>
+                <ol>
+                  <li><strong>Emotional Connection</strong>  </li>
+                </ol>
+                <p>   - By giving each item a unique backstory—whether humorous, poignant, or mysterious—the project tapped into buyers’ emotions, making them see the objects as more than mere curios.</p>
+                <ol>
+                  <li><strong>Illustrates Perceived Value</strong>  </li>
+                </ol>
+                <p>   - The experiment demonstrates that perceived value isn’t just about material worth or brand; it’s also about the story surrounding a product.</p>
+                <ol>
+                  <li><strong>Implications for Design and Marketing</strong>  </li>
+                </ol>
+                <p>   - For anyone involved in branding, marketing, or user experience, this provides a case study in how powerful narratives can sway decision-making and willingness to pay.</p>
+                <h2 id="more-on-significant-objects">More on “Significant Objects”</h2>
+                <ul>
+                  <li>
+                    <p><strong>Project Website</strong>: <a href="http://significantobjects.com/">Significant Objects</a>  </p>
+                  </li>
+                  <li>
+                    <p><strong>Collected Stories</strong>: The project eventually compiled many of the fictional backstories into a book, showcasing the effectiveness of storytelling in commerce.</p>
+                  </li>
+                  <li>
+                    <p><strong>Influence</strong>: Marketers, UX designers, and storytellers often cite it as a prime example of how narrative can drive engagement and value.</p>
+                  </li>
+                </ul>
+                <h2 id="key-takeaway">Key Takeaway</h2>
+                <p>“Storytelling has a 30X Return on Investment” underscores the idea that a compelling narrative can imbue even mundane things with heightened value, proving that in many fields—especially design—the story you tell can be just as important as the product itself.</p>
+                <h3 id="the-pudding"><a href="https://pudding.cool/">The Pudding</a></h3>
+                <p>The Pudding explains ideas debated in culture with visual essays. Some of the most complex, debated topics get lost in “too long; didn’t read” 10,000-word articles. Visual storytelling makes ideas more accessible—or so goes the adage “a picture is worth a thousand words.”</p>
+                <p>!<span class="tooltip"><a class="stale-link" href="javascript:void(0)">images/pudding.png</a> <span class="right bottom"> <span class="tooltip-title">Note does not exist</span><br/>
+                      <span class="tooltip-excerpt">This note is has not been published (yet). <br/>
+                      </span> </span></span></p>
+                <h3 id="nightingale"><a href="https://nightingaledvs.com/">Nightingale</a></h3>
+                <p><em>Nightingale</em> is the journal of the Data Visualization Society (DVS). They feature high-quality articles covering many of the applications of data visualization—including history, sports, how-to, best practices, and many other compelling aspects or implementations of visual information design.</p>
+                <h3 id="the-hindu---data-point"><a href="https://www.thehindu.com/data/">The Hindu - Data Point</a></h3>
+                <p>Data Stories, Data Visualisation, Interactive Graphics from The Hindu. They also have a podcast!</p>
+                <h3 id="disinformation-fake-news-and-influence-campaigns-on-twitter"><a href="https://knightfoundation.org/features/misinfo/">Disinformation, ‘fake news’ and influence Campaigns on Twitter</a></h3>
+                <p>Scrollytelling</p>
+                <p><a href="https://www.reuters.com/graphics/INDIA-POLLUTION/01008173281/">A window into Delhi's deadly pollution</a></p>
+              </div>
+              <!-- Add backlinks to the current page --></div>
+          </div>
+          <!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+      </section>
+      <div id="copyright">
+        <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+          Credits</a> </p>
+    </div>
+  </main>
+</body>
+</html>

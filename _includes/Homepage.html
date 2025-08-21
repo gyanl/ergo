@@ -1,0 +1,24 @@
+<div class="home-intro">
+    <div class="jumbo">{{site.heading}}</div>
+    <div class="home-sub-text">
+        <div class="notes-grid">
+            {% assign notes = site.notes | sort: 'title' %}
+            {% for note in notes %}
+            <div class="note-card">
+                <a href="{{ note.url | relative_url }}">
+                    <h3>{{ note.title }}</h3>
+                    {% if note.description %}
+                    <p>{{ note.description }}</p>
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="column is-6-widescreen  is-8-desktop is-8-tablet is-12-mobile">
+    <h5 class="meta-title"><a href="/">← Home</a></h5>
+    <div class="jumbo">{{page.title}}</div>
+    {%- include Content.html -%}
+    {%- include Feed.html -%}

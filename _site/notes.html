@@ -1,0 +1,686 @@
+<!-------------------------------------------------------------------------------------
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan, Asim K T
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="DD 324: Data Visualisation" property="og:site_name" />
+    <meta content="Notes for DD 324: Data Visualisation at Department of Design, DTU" property="og:description">
+    <meta content="http://0.0.0.0:4000/about/" property="article:author">
+    <meta property="og:image" content="https://gyanl.com/dv/assets/img/ogdv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"><meta content="Notes" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://0.0.0.0:4000/notes" property="og:url"><title>Notes - Data Visualization</title>
+    <link rel="canonical" href="http://0.0.0.0:4000/notes" />
+    <link rel="apple-touch-icon" href="/dv/assets/img/profile.png">
+    <link rel="icon" href="http://0.0.0.0:4000/assets/img/favicon.png" type="image/png" sizes="16x16" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/stylesheet.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/main.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/Util.css" rel="stylesheet" media="all" class="default" />
+    <link href="http://0.0.0.0:4000/dv/assets/css/vendor/Katex.css" rel="stylesheet" media="all" class="default" />
+    <!--[if IE]>
+      <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://0.0.0.0:4000/feed.xml">
+  </head>
+  <body>
+    <main><nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/dv/index.html">
+            <h3> Data Visualization</h3>
+          </a>
+          <script src="/dv/assets/js/modeswitcher.js"></script>
+          <script src="/dv/assets/js/Hamburger.js"></script>
+          <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+            <div class="buttons">
+              <a class="button is-text">
+                <span class="icon is-small">
+                  <img src="/dv/assets/img/sun.svg" id="theme-toggle-img--mobile">
+                </span>
+              </a>
+            </div>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="https://gyanl.com/dv/about" target="_blank" class="navbar-item">
+              About
+            </a>
+            <a href="https://gyanl.com/dv/syllabus" target="_blank" class="navbar-item">
+              Syllabus
+            </a>
+          </div>
+          <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-text">
+                  <span class="icon is-small">
+                    <img src="/dv/assets/img/sun.svg" id="theme-toggle-img">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section">
+        <div class="columns is-centered">
+          <!--- Notes Feed Layout-->
+          <div class="column is-6-widescreen is-8-desktop is-8-tablet is-12-mobile">
+            <div class="jumbo">Notes</div>
+            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+            <div class="content">
+              <p>The feed page shows all notes from <code class="language-plaintext highlighter-rouge">notes</code> folder. If you want to hide any notes from this feed, add <code class="language-plaintext highlighter-rouge">feed:hide</code> on note's Frontmatter. Eg:<span class="tooltip"><a class="stale-link" href="javascript:void(0)">Hidden Note</a> <span class="right bottom"> <span class="tooltip-title">Note does not exist</span><br/>
+                    <span class="tooltip-excerpt">This note is has not been published (yet). <br/>
+                    </span> </span></span></p>
+            </div>
+            <!--Notes Feed-->
+            <!--Static Page : pages/notes.md--><!-- search bar -->
+            <div class="block">
+              <input class="input is-medium" type="text" placeholder="Search notes.." id="search-input" autocomplete="off">
+              <div id="search-results" class="search-results"></div>
+            </div>
+            <script type="text/javascript" src="/dv/assets/js/vendor/lunr.min.js"></script>
+            <script src="/dv/assets/js/Search.js"></script><!-- feed with filter-->
+            <!-- show only items tagged lecture -->
+            <div class="related-wrapper">
+              <h5 class="meta-title centre-title">Lectures</h5>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-12">
+                  <h6>Lecture 12</h6>
+                  <p>22 April 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 12  22 April 2025.pdf
+                    Endsem Presentations
+                    This day is for grading and goodbyes.
+                    Morning
+                    Presentations Project  Endsem Project
+                    Afternoon
+                    Presentations P...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-11">
+                  <h6>Lecture 11</h6>
+                  <p>15 April 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 12  22 April 2025.pdf
+                    Odds and Endings
+                    Morning
+                    Reading: When statistics become stories | Gurman Bhatia
+                    Afternoon
+                    Presentations  Exercise  Self Visualising...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-10">
+                  <h6>Lecture 10</h6>
+                  <p>08 April 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 10  8 April 2025.pdf
+                    Interactivity &amp;amp; Motion
+                    Morning
+                    Animated Transitions in Statistical Data Graphics on Vimeo
+                    Presentations  Exercise  Self Visualis...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-9">
+                  <h6>Lecture 9</h6>
+                  <p>01 April 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 9  1 April 2025.pdf
+                    Schematic Maps
+                    Morning
+                    Reading: The “Vignelli” Map at 50  New York Transit Museum
+                    Midsem exam results and discussion
+                    Schematic Maps
+                    T...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-8">
+                  <h6>Lecture 8</h6>
+                  <p>24 March 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 8  24 March 2025.pdf
+                    Data Viz in Interfaces
+                    Morning
+                    Dashboard Etymology  The History of the Dashboard – DED Company
+                    Who, What, Why, When
+                    Examples of Dashbo...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-7">
+                  <h6>Lecture 7</h6>
+                  <p>25 February 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 7  25 Feb 2025.pdf
+                    Colors
+                    Morning
+                    Reading: Reimagining Google Maps with a New Color Palette
+                    Colors and what they represent
+                    Representing colors digitally
+                    ...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-6">
+                  <h6>Lecture 6</h6>
+                  <p>11 February 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 6  11 Feb 2025.pdf
+                    Data is Around Us
+                    Morning
+                    Data Art
+                    Participatory Visualisations
+                    Birdwatching
+                    Jang Lee  Recognise The Sound
+                    Exercise: Exercise  Self ...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-5">
+                  <h6>Lecture 5</h6>
+                  <p>04 February 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 5  4 Feb 2025.pdf
+                    Convincing with Data
+                    Morning
+                    What is a chart saying?
+                    The Trifecta Check for Critiquing Data Vis Projects
+                    WTF Visualizations
+                    IIT graduat...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-4">
+                  <h6>Lecture 4</h6>
+                  <p>28 January 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 4  28 Jan 2025.pdf
+                    Making Charts
+                    Morning
+                    Reading: Chapter 9 (Page 209222) from Good Charts by Scott Berinato
+                    Presentations: Exercise  Data Visualisation Tool...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-3">
+                  <h6>Lecture 3</h6>
+                  <p>21 January 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 3a  21 Jan 2025.pdf
+                    Data Viz  Lecture 3b  21 Jan 2025.pdf
+                    Marks &amp;amp; Channels
+                    Morning
+                    Grading Scheme
+                    Reading: Chapter 5 of Tamara Munzner&#39;s Visualiz...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-2">
+                  <h6>Lecture 2</h6>
+                  <p>14 January 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 2  14 Jan 2025.pdf
+                    Structured Data
+                    Morning
+                    Why visualise?
+                    Visual representations can lead to insights
+                    Card PIN Dataset
+                    Exercise: Exercise  PIN Point
+                    F...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lecture-1">
+                  <h6>Lecture 1</h6>
+                  <p>07 January 2025</p>
+                  <p class="excerpt">
+                    Link to Slides
+                    Data Viz  Lecture 1  7 Jan 2025.pdf
+                    Data and Information
+                    Morning
+                    Data, Information, Knowledge, Wisdom
+                    Processing Data to Information
+                    Infographics, Data Visualisation
+                    Exer...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/lectures">
+                  <h6>Lectures</h6>
+                  <p>06 January 2025</p>
+                  <p class="excerpt">
+                    See also: Syllabus · Grading
+                    Tuesdays
+                    10am  12:30pm Lectures + Studio
+                    1pm  2pm Lunch Break
+                    2pm  5pm Presentations + Exercises
+                    Lecture 1  Data and Information
+                    7 January 2025
+                    Lec...
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- show only items tagged exercise -->
+            <div class="related-wrapper">
+              <h5 class="meta-title centre-title">Exercises</h5>
+              <div class="notelist-feed">
+                <a href="/dv/project-endsem-project">
+                  <h6>Project - Endsem Project</h6>
+                  <p class="excerpt">
+                    Expected time available to work on this project is about 2 weeks, so the scope for the project is similiar to Midsem projects.
+                    Option 1  Expand on your midsem project
+                    If you felt there was more y...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-schematic-maps">
+                  <h6>Exercise - Schematic Maps</h6>
+                  <p class="excerpt">
+                    Credits
+                    This exercise is based on Rasagy&#39;s Schematic Map exercise. You can watch his Outlier 2022 talk Scheming Against Accurate Maps on Youtube and check out Map School on GitHub.
+                    Step 1  Wh...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-dashboard-design">
+                  <h6>Exercise - Dashboard Design</h6>
+                  <p class="excerpt">
+                    I didn&#39;t want to give everyone in the class the exact same exercise, and I want everyone to have a sample dataset so there are restrictions similar to a real life visualisation problem. Use the...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-style-a-map">
+                  <h6>Exercise - Style a Map</h6>
+                  <p class="excerpt">
+                    Find maps or other images that inspire you
+                    Create a moodboard. Some sources could be:
+                    David Rumsey Historical Map Collection
+                    OldMapsOnline
+                    Create Color Palette inspired by the colors you...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/project-midsem-project">
+                  <h6>Project - Midsem Project</h6>
+                  <p class="excerpt">
+                    A Week in Data
+                    Track personal habits (sleep, screen time, food intake, mood) and use what you learnt about data visualisation to create a data story that represents your lifestyle. Try and track a...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-self-visualising-information">
+                  <h6>Exercise - Self Visualising Information</h6>
+                  <p class="excerpt">
+                    Data doesn’t always need to be collected and processed to be seen—it often visualises itself in the physical world. By observing our surroundings, we can uncover naturally occurring data visualisat...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-critique-and-redesign">
+                  <h6>Exercise - Critique and Redesign</h6>
+                  <p class="excerpt">
+                    Reference Material
+                    See Which Chart to Use for a list of reference material that show the different types of data and the types of charts that can be used to represent them.
+                    Instructions
+                    Create t...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-three-ways-of-visualising">
+                  <h6>Exercise - Three Ways of Visualising</h6>
+                  <p class="excerpt">
+                    Reference Material
+                    See Which Chart to Use for a list of reference material that show the different types of visualisations and the types of charts that can be used to represent them.
+                    Instructions...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-data-visualisation-tools">
+                  <h6>Exercise - Data Visualisation Tools</h6>
+                  <p class="excerpt">
+                    Activity Details
+                    This page lists a number of Data Visualisation tools. Pick one of these tools using the signup sheet shared on the class group and prepare a 5 minute presentation on it. You can c...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-data-selfie">
+                  <h6>Exercise - Data Selfie</h6>
+                  <p class="excerpt">
+                    We are all producing data all the time!
+                    Phone calls
+                    Emails/Whatsapp messages
+                    Health/fitness data
+                    Instagram likes
+                    Screen time/App usage Attendance marking
+                    Location sharing/history
+                    Br...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-explore-a-dataset">
+                  <h6>Exercise - Explore a Dataset</h6>
+                  <p class="excerpt">
+                    Instructions
+                    Find a dataset in an area that you are interested in. For the purpose of this exercise, avoid text heavy datasets and image datasets. Make sure there are at least 4 features in the da...
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- show everything other than lecture and exercise -->
+            <div class="related-wrapper">
+              <h5 class="meta-title centre-title">Other Notes</h5>
+              <div class="notelist-feed">
+                <a href="/dv/physical-visualisations">
+                  <h6>Physical Visualisations</h6>
+                  <p class="excerpt">
+                    Physical visualisations
+                    To Scale: TIME  YouTube
+                    Physical &amp;amp; digital 3D maps  Gramener Blog
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/field-trip-dtu-library">
+                  <h6>Field Trip - DTU Library</h6>
+                  <p class="excerpt">
+                    We will visit the DTU Library and look through the design section for references and inspiration for data visualisation, visual design and storytelling.
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/project-ideas">
+                  <h6>Project Ideas</h6>
+                  <p class="excerpt">
+                    Participatory data visualisation
+                    Set up a system where people can come and add to your visualisation. This could look like a desk with some materials and some instructions on how to add to the visu...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/field-trip-bird-noticing">
+                  <h6>Field Trip - Bird Noticing</h6>
+                  <p class="excerpt">
+                    There are a lot of birds around DTU. If you take a quiet walk through the campus, you&#39;ll be able to hear them in the trees. Have you ever wondered which birds these are?
+                    Bird Noticing is an id...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/geospatial-visualisation">
+                  <h6>Geospatial Visualisation</h6>
+                  <p class="excerpt">
+                    List of countries and dependencies by population density  Wikipedia
+                    Mangalore Tree Count  Instagram
+                    Surface temperature of Mangaluru increased by five degrees celsius in a decade: Tree Count ...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/rules-for-class-crits">
+                  <h6>Rules for Class Crits</h6>
+                  <p class="excerpt">
+                    Keep feedback respectful and focused on the work, not the person. We’re all here to learn.
+                    If you liked something, call it out! If you don’t, try and explain why.
+                    You can use “I wonder…” or “Ha...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/which-chart-to-use">
+                  <h6>Which Chart to Use</h6>
+                  <p class="excerpt">
+                    From Data to Viz
+                    Find the graphic you need. Has a handy flow chart to decide on the basis of what your data looks like.
+                    Data Viz Project
+                    Collections of data visualizations to get inspired and fi...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/marks-and-channels">
+                  <h6>Marks and Channels</h6>
+                  <p class="excerpt">
+                    Marks
+                    Marks are the the basic geometries, or graphical elements, in a plot that depict our data items or their linkages.
+                    Points
+                    Lines
+                    Area
+                    Volume
+                    Containment
+                    Connection
+                    Channels
+                    ...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/grading">
+                  <h6>Grading</h6>
+                  <p class="excerpt">
+                    See also: Syllabus · Lectures
+                    Data Visualization Course Grading Plan
+                    Assessment and Grading Breakdown
+                    Your performance in this course will be evaluated across the following components, each desi...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/exercise-pin-point">
+                  <h6>Exercise - PIN Point</h6>
+                  <p class="excerpt">
+                    Dataset
+                    Download this dataset of synthetic PIN card numbers from Kaggle. Open the .csv file in either a text editor or Microsoft Excel or Google Sheets to see the values.
+                    PIN Data | Kaggle
+                    Are y...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/data-storytelling-and-journalism">
+                  <h6>Data Storytelling and Journalism</h6>
+                  <p class="excerpt">
+                    Date of births
+                    The “Significant Objects” Experiment
+                    Overview
+                    Experiment: Rob Walker (a journalist) and Joshua Glenn (a writer and editor) conducted an experiment called “Significant Obje...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/data-ethics">
+                  <h6>Data Ethics</h6>
+                  <p class="excerpt">
+                    Windows and Mirrors
+                    Mirrors, not windows  Alberto Cairo&#39;s The Art of Insight
+                    Bhoomi
+                    What if Pepsi wants to sell water?
+                    Pepsico wants to identify areas that don&#39;t have drinking water and...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/courses">
+                  <h6>Courses</h6>
+                  <p class="excerpt">
+                    Data Visualisation Courses at other universities
+                    Intro to Dataviz  Spring 2024
+                    Columbia University
+                    Principles of Data Visualization
+                    UC Davis
+                    Data: Past, Present, and Future
+                    Outlier Conf talks...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/about">
+                  <h6>About</h6>
+                  <p class="excerpt">
+                    About this Website
+                    This website documents some of the material I shared with students as part of the DD325: Data Visualization elective I taught at Department of Design, Delhi Technological Univer...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/finding-datasets">
+                  <h6>Finding Datasets</h6>
+                  <p class="excerpt">
+                    Kaggle
+                    Kaggle is a Community for Machine Learning and Data Science. There are many datasets available for free. It leans towards AI/ML applications but the data can just as well be used for Data V...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/visualising-structured-data">
+                  <h6>Visualising Structured Data</h6>
+                  <p class="excerpt">
+                    What Can We Do with Data?
+                    Below is an overview of five main approaches to working with data, along with potential outcomes and examples.
+                    An Awardwinning Data Visualization Designer | Visual Cinnam...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/recommended-reading">
+                  <h6>Recommended Reading</h6>
+                  <p class="excerpt">
+                    University Course Recommendations
+                    S. No.
+                    Name of Authors / Books / Publishers
+                    Year
+                    1
+                    Envisioning Information, E. Tufte. Graphics Press
+                    ...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/quantified-self">
+                  <h6>Quantified Self</h6>
+                  <p class="excerpt">
+                    Nicholas Felton&#39;s Annual Reports
+                    Nicholas Felton is a designer, entrepreneur and artist whose work focuses on translating quotidian data into meaningful objects and experiences. He is the auth...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/levels-of-measurement">
+                  <h6>Levels of Measurement</h6>
+                  <p class="excerpt">
+                    Data Measurement Scales
+                    These scales describe how data can be categorized, ranked, or measured with varying degrees of precision. Below are four common data types—Nominal, Ordinal, Interval, and R...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/image-models">
+                  <h6>Image Models</h6>
+                  <p class="excerpt">
+                    Time Magazine Covers  Cultural Analytics Lab
+                    Every Outdoor Basketball Court in the U.S.A.  The Pudding
+                    Modern art Color filter— Google Arts &amp;amp; Culture
+                    Play a Kandinsky — Google Arts &amp;a...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/syllabus">
+                  <h6>Syllabus</h6>
+                  <p class="excerpt">
+                    See also: Lectures · Grading
+                    Subject Code: DD325
+                    Course Title: Data Visualization
+                    Jan to May 2025
+                    Course Objective: Learn to use data as a design material to exhibit, explore, explain, experience...
+                  </p>
+                </a>
+              </div>
+              <div class="notelist-feed">
+                <a href="/dv/credits">
+                  <h6>Credits</h6>
+                  <p class="excerpt">
+                    Course material
+                    Prof. Venkatesh Rajamanickamat the Information Design Lab at IDC School of Design, IIT Bombay. I based a lot of the structure and exercises for this course on what I learnt duri...
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!--Dynamic List Feed-->
+            <!--Static Page : pages/lists.md--><!--- Notes Layout--><!--- Post Feed Layout--><!--- Post Layout--><!--- Static Page Layout--></div>
+        </section>
+        <div id="copyright">
+          <p id="copyright-notice"> © 2025 • Contents under CC-BY-NC •
+            Credits</a> </p>
+      </div>
+    </main>
+  </body>
+</html>
