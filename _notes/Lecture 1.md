@@ -7,9 +7,14 @@ title: "Lecture 1"
 ---
 
 > **Link to Slides**
-> [Data Viz - Lecture 1 - 7 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/Data Viz - Lecture 1 - 7 Jan 2025.pdf)
+
 
 ## Data and Information
+
+- Ergonomics vs. human factors vs. human–system interaction
+- Why ergonomics matters in UX/digital product design
+- Real-world failures & successes
+- **Homework Assigned:** Mini-analysis of a badly designed product (physical or digital)
 
 #### Morning
 - Data, Information, Knowledge, Wisdom
