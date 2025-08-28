@@ -35,7 +35,5 @@ sample diagrams of ergonomic chairs (neutral posture) for comparison.
 
 Some datasets discussed in class:
 
-- [PIN Data \| Kaggle](https://www.kaggle.com/datasets/rickborn62/pin-data?resource=download)
-- [Spotify Music Dataset \| Kaggle](https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset)
-- [Vegetable Image Dataset \| Kaggle](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset)
+- ["Tech neck"](https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/effect-of-technology-on-your-neck)
 
