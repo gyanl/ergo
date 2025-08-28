@@ -6,11 +6,8 @@ title: "About"
 ---
 ### About this Website
 
-This website documents some of the material I shared with students as part of the DD325: Data Visualization elective I taught at Department of Design, Delhi Technological University January to April 2025.
+This website documents some of the material I shared with students as part of the UCD & UX 1 Course on Ergonomics (Physical and Digital course I taught at JSID/Ecole Intuit Lab in Delhi in Aug 2025.
 
-![](assets/img/class-photo.jpeg)
-
-> A photo on the last day of class.
 ### Jekyll Garden
 
 This website uses [Jekyll-Garden](https://github.com/Jekyll-Garden/jekyll-garden.github.io), an open source theme for Jekyll created by [Hiran Venugopalan](https://github.com/hfactor)that can be used with [Obsidian](https://obsidian.md/) and [GitHub Pages](https://pages.github.com/) for a public notes solution.

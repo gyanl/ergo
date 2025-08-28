@@ -9,22 +9,27 @@ title: "Lecture 2"
 > **Link to Slides**
 > [Data Viz - Lecture 2 - 14 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/Data Viz - Lecture 2 - 14 Jan 2025.pdf)
 
-## Structured Data
+## Physical Ergonomics
 
-#### Morning
-- Why visualise?
-- Visual representations can lead to insights
-- Card PIN Dataset
-- **Exercise:** [[Exercise - PIN Point]]
-- Finding data
-- Exploring datasets
-- Features in datasets
-- Data models - structured and unstructured data
-- **Exercise:** [[Exercise - Explore a Dataset]]
+- Anthropometry
 
-#### Afternoon
-- **Presentations:** [[Exercise - Data Visualisation Tools]]
-- **Exercise:** [[Exercise - Explore a Dataset]] WITH AI!!!
+Interpret **percentile data** and apply it to design decisions (e.g., chair heights, smartphone sizes).
+
+The data obtained from anthropometric measurements varies, even within the same population, because each individual has different anatomical body structures. Therefore, we have to calculate anthropometric measurement data into a normal distribution.
+
+Class activity to measure their body measurements, design a table and a chair for a population of just this class.
+
+3. Recognize how posture, force, and repetition affect comfort and injury risk.
+
+Draw some chairs
+
+4. Identify examples of poor vs. good physical ergonomics in everyday devices/workstations.
+5. Apply ergonomic principles to propose small design improvements that minimize strain.
+
+- Biomechanics
+- Application in designing devices, workstations, and physical interfaces
+- Minimizing physical strain and promoting comfort
+![[Lecture 2.png]]
 
 #### Resources
 

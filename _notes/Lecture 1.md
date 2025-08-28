@@ -9,7 +9,7 @@ title: "Lecture 1"
 > **Link to Slides**
 
 
-## Data and Information
+## Introduction
 
 - Ergonomics vs. human factors vs. human–system interaction
 - Why ergonomics matters in UX/digital product design
