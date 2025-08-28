@@ -9,6 +9,9 @@ title: "Lecture 2"
 > **Link to Slides**
 > [Data Viz - Lecture 2 - 14 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/Data Viz - Lecture 2 - 14 Jan 2025.pdf)
 
+- Ergonomics vs. human factors vs. human–system interaction
+- Real-world failures & successes
+- [[Exercise - Drawing Chairs]]
 ## Physical Ergonomics
 
 - Anthropometry
@@ -31,6 +34,8 @@ sample diagrams of ergonomic chairs (neutral posture) for comparison.
 - Minimizing physical strain and promoting comfort
 ![[Lecture 2.png]]
 
+
+- **Homework Assigned:** Mini-analysis of a badly designed product (physical or digital)
 #### Resources
 
 Some datasets discussed in class:

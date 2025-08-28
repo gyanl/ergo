@@ -4,7 +4,7 @@
 
 layout: Post
 feedformat: card
-title: DD 324 - Data Visualisation
+title: Ergonomics - Physical & Cognitive
 permalink: /
 ---
 

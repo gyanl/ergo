@@ -7,21 +7,16 @@ title: "Lecture 1"
 ---
 
 > **Link to Slides**
-
+> [Ergonomics - Lecture 1 - 22 August.pdf](https://gyanl.com/dv/assets/pdf/Ergonomics - Lecture 1 - 22 August.pdf)
 
 ## Introduction
 
-- Ergonomics vs. human factors vs. human–system interaction
-- Why ergonomics matters in UX/digital product design
-- Real-world failures & successes
-- **Homework Assigned:** Mini-analysis of a badly designed product (physical or digital)
+- Examples of designed objects
+- Signifiers
+- Affordances
+- Why ergonomics matters
+### Reading
 
-#### Morning
-- Data, Information, Knowledge, Wisdom
-- Processing Data to Information
-- Infographics, Data Visualisation
-- **Exercise:** [[Exercise - Data Selfie]]
+“Don’t make something unless it is both necessary and useful; but if it is both necessary and useful, don’t hesitate to make it beautiful.”
+[The Shaker Design Philosophy](http://bokardo.com/archives/the-shaker-design-philosophy/)
 
-#### Afternoon
-- Data models - Levels of measurements
-- **Homework Assigned:** Data Viz software tool presentations
