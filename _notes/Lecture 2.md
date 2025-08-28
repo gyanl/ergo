@@ -7,12 +7,13 @@ title: "Lecture 2"
 ---
 
 > **Link to Slides**
-> [Data Viz - Lecture 2 - 14 Jan 2025.pdf](https://gyanl.com/dv/assets/pdf/Data Viz - Lecture 2 - 14 Jan 2025.pdf)
+
+## Physical Ergonomics
 
 - Ergonomics vs. human factors vs. human–system interaction
 - Real-world failures & successes
 - [[Exercise - Drawing Chairs]]
-## Physical Ergonomics
+
 
 - Anthropometry
 
