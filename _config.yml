@@ -23,11 +23,11 @@ url: "https://gyanl.com" # the base hostname & protocol for your site, e.g. http
 
 # If you want to install this jekyll in a subpath (eg /digitalgarden) set it here. 
 # Else keep it Empty (DON'T PUT /; Keep it empty)
-baseurl: "/dv"
+baseurl: "/ergo"
 
 # Website Header, Description, Footer year and text. 
 # If you are deleting this, make sure you remove it from HTML files too 
-heading: Data Visualization # Change this 
+heading: Ergonomics - Physical & Cognitive # Change this 
 content: Notes for Data Visualization
 copyright:  
   year: © 2025
