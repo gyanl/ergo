@@ -9,13 +9,16 @@ title: "Lecture 2"
 > **Link to Slides**
 
 ## Physical Ergonomics
-
-- Ergonomics vs. human factors vs. human–system interaction
-- Real-world failures & successes
+- Why study ergonomics?
+- Anthropometry
+- Body measurements and percentile data
 - [[Exercise - Drawing Chairs]]
 
 
-- Anthropometry
+
+- Ergonomics vs. human factors vs. human–system interaction
+- Real-world failures & successes
+
 
 Interpret **percentile data** and apply it to design decisions (e.g., chair heights, smartphone sizes).
 
@@ -38,8 +41,6 @@ sample diagrams of ergonomic chairs (neutral posture) for comparison.
 
 - **Homework Assigned:** Mini-analysis of a badly designed product (physical or digital)
 #### Resources
-
-Some datasets discussed in class:
 
 - ["Tech neck"](https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/effect-of-technology-on-your-neck)
 

@@ -3,10 +3,10 @@ date: 28-01-2025
 date modified: 03-02-2025
 feed: show
 tag: exercise
-title: "Exercise - Critique and Redesign"
+title: Exercise - Drawing Chairs
 ---
 
-### Objective
+### Objective 
 
 - Make anthropometry tangible: see how measurements vary even in a small group.
 - Apply the “5th–95th percentile” design rule to a real dataset.
