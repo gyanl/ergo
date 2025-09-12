@@ -18,7 +18,7 @@ See also: [[Syllabus]] · [[Grading]]
 #### [[Lecture 2]] - Structured Data
 *14 January 2025*
 
-#### [[Lecture 3]] - Marks & Channels + Unstructured Data
+#### [[_notes/Private/Lecture 3]] - Marks & Channels + Unstructured Data
 *21 January 2025*
 
 #### [[Lecture 4]] - Making Charts + Human Visual Perception
