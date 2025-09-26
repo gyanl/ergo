@@ -21,10 +21,10 @@ See also: [[Syllabus]] · [[Grading]]
 #### [[_notes/Private/Lecture 3]] - Marks & Channels + Unstructured Data
 *21 January 2025*
 
-#### [[Lecture 4]] - Making Charts + Human Visual Perception
+#### [[_notes/Private/Lecture 4]] - Making Charts + Human Visual Perception
 *28 January 2025*
 
-#### [[Lecture 5]] - Convincing with Data
+#### [[_notes/Private/Lecture 5]] - Convincing with Data
 *4 February 2025*
 
 #### [[Lecture 6]] - Data Around Us
