@@ -12,9 +12,16 @@ title: Lecture 6
 
 - Fitt's Law
 - Hick's Law
-- Reducing mental effort and improving comprehension in interfaces
+- Tesler's Law
+- Jakob's Law
+- Von Restorff Effect
+- Miller's Law
+- Parkinson's Law
+- Aesthetic-Usability Effect
+- Pareto Principle
 
 #### Resources
-- [How to Read a Paper - S. Keshav](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
+- [UX Laws \| uxtoast](https://www.uxtoast.com/ux-laws/)
+- [Home \| Laws of UX](https://lawsofux.com/)
 
 

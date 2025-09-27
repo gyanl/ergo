@@ -8,6 +8,8 @@ title: "Lecture 2"
 
 > **Link to Slides**
 > [Ergonomics - Lecture 2 - 29 August.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 2 - 29 August.pdf)
+
+
 ## Physical Ergonomics
 
 - Why study ergonomics?
