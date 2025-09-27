@@ -3,7 +3,7 @@ date: 28-01-2025
 date modified: 03-02-2025
 feed: show
 tag: exercise
-title: Exercise - Drawing Chairs
+title: Exercise - Laws of UX
 ---
 
 ### Activity (1 hour)
