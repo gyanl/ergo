@@ -7,6 +7,7 @@ title: Lecture 3
 ---
 
 > **Link to Slides**
+> [Ergonomics - Lecture 3 - 12 September.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 3 - 12 September.pdf)
 
 ## Cognitive Ergonomics
 

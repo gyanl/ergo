@@ -3,16 +3,15 @@ date: 14-01-2025
 date modified: 12-06-2025
 feed: show
 tag: lecture
-title: Lecture 5
+title: Lecture 6
 ---
 
 > **Link to Slides**
-> [Ergonomics - Lecture 5 - 26 September.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 5 - 26 September.pdf)
 
-## Mental Models
+## Interaction Design Laws
 
-- Class discussion: How to read a paper 
-- Mental Models
+- Fitt's Law
+- Hick's Law
 - Reducing mental effort and improving comprehension in interfaces
 
 #### Resources

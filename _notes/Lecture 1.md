@@ -7,7 +7,7 @@ title: "Lecture 1"
 ---
 
 > **Link to Slides**
-> [Ergonomics - Lecture 1 - 22 August.pdf](https://gyanl.com/dv/assets/pdf/Ergonomics - Lecture 1 - 22 August.pdf)
+> [Ergonomics - Lecture 1 - 22 August.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 1 - 22 August.pdf)
 
 ## Introduction
 

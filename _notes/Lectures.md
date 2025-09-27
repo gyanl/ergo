@@ -8,23 +8,22 @@ title: "Lectures"
 
 See also: [[Syllabus]] · [[Grading]]
 
-#### Tuesdays
-- **10am - 12:30pm** Lectures + Studio
-- **1pm - 2pm** Lunch Break
-- **2pm - 5pm** Presentations + Exercises
+#### Class schedule
+- Fridays, 10am - 12:15pm
+
 #### [[Lecture 1]] - Data and Information
-*7 January 2025*
+22 August 2025
 
 #### [[Lecture 2]] - Structured Data
 *14 January 2025*
 
-#### [[_notes/Private/Lecture 3]] - Marks & Channels + Unstructured Data
+#### [[_notes/Lecture 3|Lecture 3]]- Marks & Channels + Unstructured Data
 *21 January 2025*
 
-#### [[_notes/Private/Lecture 4]] - Making Charts + Human Visual Perception
+#### [[Lecture 4]] - Making Charts + Human Visual Perception
 *28 January 2025*
 
-#### [[_notes/Private/Lecture 5]] - Convincing with Data
+#### [[Lecture 5]] - Convincing with Data
 *4 February 2025*
 
 #### [[Lecture 6]] - Data Around Us

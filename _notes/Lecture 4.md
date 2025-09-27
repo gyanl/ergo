@@ -7,6 +7,7 @@ title: Lecture 4
 ---
 
 > **Link to Slides**
+> [Ergonomics - Lecture 4 - 19 September.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 4 - 19 September.pdf)
 
 ## Attention
 
