@@ -30,5 +30,9 @@ The more options you give a user, the longer they’ll take to decide.
    - Use progressive disclosure (show more options only when needed)
 
 #### Resources
+
+There is no one comprehensive set of UX Laws - different sources have different considerations for what constitutes a law. Here are some resources you can refer to.
+
 - [UX Laws \| uxtoast](https://www.uxtoast.com/ux-laws/)
 - [Home \| Laws of UX](https://lawsofux.com/)
+- [What are the laws of UX? All 21 laws explained](https://www.uxdesigninstitute.com/blog/laws-of-ux/)
