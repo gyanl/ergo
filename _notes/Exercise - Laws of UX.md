@@ -21,9 +21,10 @@ title: Exercise - Laws of UX
 
 - Example for Hick’s Law:
 
-![[https://www.gyanl.com/ergo/assets/img/hicks.png]]
+
 The more options you give a user, the longer they’ll take to decide.
 
+![Hick's Law  paper screenshot](https://www.gyanl.com/ergo/assets/img/hicks.png)
 
    - Group menu items into clear categories
    - Show most-used actions first
