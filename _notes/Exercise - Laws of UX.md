@@ -21,7 +21,7 @@ title: Exercise - Laws of UX
 
 - Example for Hick’s Law:
 
-![[assets/img/Screenshot 2025-09-27 at 1.08.55 PM.png]]
+![[https://www.gyanl.com/ergo/assets/img/hicks.png]]
 The more options you give a user, the longer they’ll take to decide.
 
 
