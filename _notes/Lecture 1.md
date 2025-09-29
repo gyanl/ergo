@@ -1,15 +1,15 @@
 ---
-date: 07-01-2025
+date: 22-08-2025
 date modified: 03-02-2025
 feed: show
 tag: lecture
-title: "Lecture 1"
+title: Lecture 1
 ---
 
 > **Link to Slides**
 > [Ergonomics - Lecture 1 - 22 August.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 1 - 22 August.pdf)
 
-## Introduction
+## Introduction (What is Good Design?)
 
 - Examples of designed objects
 - Signifiers

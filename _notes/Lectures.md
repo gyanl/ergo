@@ -11,60 +11,53 @@ See also: [[Syllabus]] · [[Grading]]
 #### Class schedule
 - Fridays, 10am - 12:15pm
 
-#### [[Lecture 1]] - Data and Information
-22 August 2025
+#### [[Lecture 1]] - Introduction (What is Good Design?)
+*22 August 2025 · 10:00am*
 
-#### [[Lecture 2]] - Structured Data
-*14 January 2025*
+#### [[Lecture 2]] - Physical Ergonomics
+*29 August 2025 · 10:00am*
 
-#### [[_notes/Lecture 3|Lecture 3]]- Marks & Channels + Unstructured Data
-*21 January 2025*
-
-#### [[Lecture 4]] - Making Charts + Human Visual Perception
-*28 January 2025*
-
-#### [[Lecture 5]] - Convincing with Data
-*4 February 2025*
-
-#### [[Lecture 6]] - Data Around Us
-*11 February 2025*
-- Create groups for Midterm Project
-- Present and finalise topics
 
 ---
 
-No lecture on 18 February 2025 (Techfest/Engifest)
-
----
-#### [[Lecture 7]] - Colors and Cartography
-*25 February 2025*
-
-#### Midterm Exam/Project Presentations
-*4 March 2025 or TBD*
-
-#### [[Lecture 8]] - Online Lecture
-*11 March 2025*
+No lecture on 5 September 2025 (Gyan travelling)
 
 ---
 
-No lecture on 18 March 2025 (Gyan Travelling)
+#### [[Lecture 3]] -  Cognitive Ergonomics
+*12 September 2025 · 10:00am*
+
+#### [[Lecture 4]] - Attention
+*19 September 2025 · 10:00am*
+
+#### [[Lecture 5]] - Mental Models
+*26 September 2025 · 10:00am*
+
+#### [[Lecture 6]] - Interaction Design Laws
+*27 September 2025 · 1:15pm*
+
+#### [[Lecture 7]]
+*30 September 2025 · 2:15pm*
+
+#### [[Lecture 8]]
+*3 October 2025 · 10:00am*
+
+#### [[Lecture 9]] - Accessibility (Guest Lecture)
+*10 October 2025 · 10:00am*
+
+#### [[Lecture 10]]
+*17 October 2025 · 10:00am*
 
 ---
 
-#### [[Lecture 9]] - Geospatial Visualisation
-*25 March 2025*
+No lecture on 24 October 2025 (Diwali break)
 
-#### [[Lecture 10]] - Storytelling with Data
-*1 April 2025*
+---
+#### [[Lecture 11]]
+*TBD*
 
-#### [[Lecture 11]] - Lying and Bias
-*8 April 2025*
+#### [[Lecture 12]]
+*4 December 2025*
 
-#### [[Lecture 12]] - Data and Motion
-*15 April 2025*
-
-#### [[Lecture 13]] - Interactive Visualisations / Dashboards
-*22 April 2025*
-
-#### Endterm Exam
-*After 30 April 2025*
+#### [[Lecture 13]]
+*5 December 2025*
