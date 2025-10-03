@@ -8,20 +8,14 @@ title: Lecture 7
 
 > **Link to Slides**
 
-## Interaction Design Laws
+## Feedback Mechanisms
 
-- Fitt's Law
-- Hick's Law
-- Tesler's Law
-- Jakob's Law
-- Von Restorff Effect
-- Miller's Law
-- Parkinson's Law
-- Aesthetic-Usability Effect
-- Pareto Principle
+- What is feedback
+- Why do ergonomic systems need feedback?
+- Qualities of effective feedback
+- Feedforward
 
 #### Resources
-- [UX Laws \| uxtoast](https://www.uxtoast.com/ux-laws/)
-- [Home \| Laws of UX](https://lawsofux.com/)
+
 
 

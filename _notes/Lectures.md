@@ -9,7 +9,7 @@ title: "Lectures"
 See also: [[Syllabus]] · [[Grading]]
 
 #### Class schedule
-- Fridays, 10am - 12:15pm
+- Fridays, 10am - 12:15pm (unless rescheduled)
 
 #### [[Lecture 1]] - Introduction (What is Good Design?)
 *22 August 2025 · 10:00am*
@@ -36,16 +36,16 @@ No lecture on 5 September 2025 (Gyan travelling)
 #### [[Lecture 6]] - Interaction Design Laws
 *27 September 2025 · 1:15pm*
 
-#### [[Lecture 7]]
+#### [[Lecture 7]] - Feedback Mechanisms
 *30 September 2025 · 2:15pm*
 
-#### [[Lecture 8]]
+#### [[Lecture 8]] - Error Prevention
 *3 October 2025 · 10:00am*
 
 #### [[Lecture 9]] - Accessibility (Guest Lecture)
 *10 October 2025 · 10:00am*
 
-#### [[Lecture 10]]
+#### [[Lecture 10]] - Error Recovery
 *17 October 2025 · 10:00am*
 
 ---

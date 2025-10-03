@@ -31,19 +31,13 @@ Relevant laws (e.g., Fitts's Law, Hick's Law) and Gestalt principles applied to 
 **Designing for Diverse Abilities (Accessibility):** 
 Principles of inclusive design, WCAG guidelines, and considerations for users with various physical and cognitive impairments.
 
-Sample Assignments
+### Sample Assignments
 
-Ergonomics Audit: Conduct a physical and cognitive ergonomics audit of a mobile app feature or a public utility
+Ergonomics Audit: Conduct a physical and cognitive ergonomics audit of a mobile app feature or a public utility service (e.g., self-checkout kiosk), identifying issues and proposing improvements.
 
-service (e.g., self-checkout kiosk), identifying issues and proposing improvements.
+Phygital Ergonomics Redesign: Analyze a physical-digital interaction (e.g., interactive museum exhibit, smart home device) and propose a redesign to enhance ergonomic comfort and cognitive flow.
 
-Phygital Ergonomics Redesign: Analyze a physical-digital interaction (e.g., interactive museum exhibit, smart
-
-home device) and propose a redesign to enhance ergonomic comfort and cognitive flow.
-
-Accessible UI Redesign: Redesign a digital interface (e.g., a public utility service) specifically for users with a
-
-particular vision or motor impairment, justifying design choices based on accessibility guidelines.
+Accessible UI Redesign: Redesign a digital interface (e.g., a public utility service) specifically for users with a particular vision or motor impairment, justifying design choices based on accessibility guidelines.
 
 # Detailed Structure
 
@@ -52,12 +46,9 @@ Good and bad design
 Form and function
 Ergonomics
 
-
 Why should things be efficient?
 - Are we designing for _comfort only_, or for _meaningful interaction_?
 - Microwave meal vs home cooked meal
 
-#### Accessibility and inclusive design
-Why design accessible interfaces
-Different types of accessibility considerations
+
 
