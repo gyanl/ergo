@@ -15,15 +15,24 @@ Read page 170-185 of [The Design of Everyday Things](https://dl.icdst.org/pdfs/f
 
 We will discuss the chapter in class and each student will talk about 2 pages.
 
-170, 171: Chirantana
-172, 173: Vansh
-174, 175: Shivangi
-176, 177: Aditya
-178, 179: Nidharna
+170, 171: 
+
+172, 173: Chirantana
+
+174, 175: Vansh
+
+176, 177: Shivangi
+
+178, 179: Aditya
+
 180, 181: Upasna
-182, 183: Neelabh 
+
+182, 183: 
+
 184, 185: Gyan
 
+Nidharna
+Neelabh 
 
 
 

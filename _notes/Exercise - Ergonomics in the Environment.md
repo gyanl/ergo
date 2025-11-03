@@ -8,10 +8,8 @@ title: Exercise - Ergonomics in the Environment
 
 ### Objective 
 
-- Make anthropometry tangible: see how measurements vary even in a small group.
-- Apply the “5th–95th percentile” design rule to a real dataset.
-- Visualize how chairs/tables must be adjusted for comfort across body sizes.
-
+- Apply what we learned in class to the real world
+- Notice details of well designed and poorly designed objects from an ergonomic lens
 ### Instructions
 1.  **Find a Poor Design (Outside Class)**
  - Over the next week, look around your environment (home, campus, café, public transport, etc.).       

@@ -13,7 +13,7 @@ title: Lecture 4
 
 - Attention
 - Memory - Working memory and long-term memory
-
+- [[Exercise - Attention Economy]]
 #### Resources
 - [What are the Gestalt Principles? - IxDF](https://www.interaction-design.org/literature/topics/gestalt-principles#docs-internal-guid-3cea3d6f-7fff-1ebe-554c-df21ce4b7c2d)
 - [The Magical Number Seven, Plus or Minus Two: Some Limits on our Capacity for Processing Information - Miller, 1956](https://labs.la.utexas.edu/gilden/files/2016/04/MagicNumberSeven-Miller1956.pdf)
