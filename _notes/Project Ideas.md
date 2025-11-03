@@ -3,10 +3,10 @@ date: 28-01-2025
 date modified: 03-02-2025
 feed: show
 tag: exercise
-title: Exercise - Types of Errors
+title: Project Ideas
 ---
 
-### ## End-Semester Project Ideas
+### End-Semester Project Ideas
 
 ### Physical Ergonomics Projects
 
