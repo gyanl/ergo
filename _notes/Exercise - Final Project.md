@@ -14,6 +14,15 @@ See [[Project Ideas]] for some possible project ideas, or propose your own.
 
 Describe the general problem area - what is the ergonomic problem you have identified? Why does it need to be redesigned? Describe your approach and what you will do over the next month? Break down week by week.
 
+### Project Presentations
+*Submissions due by 3 Dec*
+*Class presentations on 5/6 Dec*
+
+Describe the general problem area - what is the ergonomic problem you have identified? Why does it need to be redesigned? Describe your approach and what you will do over the next month? Break down week by week.
+
+
+
+
 ### Grading
 The total grade for the ergonomics project is **20 points**, distributed across five key facets.
 
