@@ -6,7 +6,7 @@ tag: lecture
 title: "Lectures"
 ---
 
-See also: [[Syllabus]] · [[Grading]]
+See also: [[Syllabus]] · [[_notes/Private/Grading]]
 
 #### Class schedule
 - Fridays, 10am - 12:15pm (unless rescheduled)

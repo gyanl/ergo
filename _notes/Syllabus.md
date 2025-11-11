@@ -5,7 +5,7 @@ feed: show
 title: "Syllabus"
 ---
 
-See also: [[Lectures]] · [[Grading]]
+See also: [[Lectures]] · [[_notes/Private/Grading]]
 
 **Subject Code:** UCD & UX 1
 **Course Title:** Ergonomics: Physical and Cognitive
