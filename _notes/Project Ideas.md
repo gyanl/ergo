@@ -40,7 +40,7 @@ Redesign an everyday product or space to be accessible for people with specific 
 
 For all projects, students should:
 - Apply specific ergonomic principles covered in the course
-- Include both quantitative data (measurements, task times, error rates) and qualitative insights (user observations, interviews)
+- Include both quantitative data (measurements, task times, error rates) and qualitative insights (user observations, interviews). Create documentation 
 - Reference academic literature and ergonomics standards
 - Create tangible deliverables (prototypes, detailed specifications, user testing reports)
 - Present findings professionally with clear documentation of methodology

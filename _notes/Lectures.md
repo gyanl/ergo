@@ -42,7 +42,7 @@ No lecture on 5 September 2025 (Gyan travelling)
 #### [[Lecture 8]] - Error Prevention
 *3 October 2025 · 10:00am*
 
-#### [[Lecture 9]] - Accessibility (Guest Lecture)
+#### [[Lecture 9 (Guest Lecture)]] - Accessibility (Guest Lecture)
 *10 October 2025 · 10:00am*
 
 #### [[Lecture 10]] - Error Recovery

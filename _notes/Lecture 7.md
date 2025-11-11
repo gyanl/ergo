@@ -7,6 +7,7 @@ title: Lecture 7
 ---
 
 > **Link to Slides**
+> [Ergonomics - Lecture 7 - 30 September.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 7 - 30 September.pdf)
 
 ## Feedback Mechanisms
 

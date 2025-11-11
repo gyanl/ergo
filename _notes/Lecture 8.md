@@ -7,6 +7,8 @@ title: Lecture 8
 ---
 
 > **Link to Slides**
+> [Ergonomics - Lecture 8 - 3 October.pdf](https://gyanl.com/ergo/assets/pdf/Ergonomics - Lecture 8 - 3 October.pdf)
+
 
 ## Error Prevention
 - [[Exercise - Types of Errors]]
