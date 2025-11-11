@@ -1,4 +1,10 @@
-
+---
+date: 1-11-2025
+date modified: 1-11-2025
+feed: show
+tag: exercise
+title: Exercise - Final Project
+---
 ### Project Ideas 
 See [[Project Ideas]] for some possible project ideas, or propose your own.
 
