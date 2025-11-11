@@ -15,7 +15,7 @@ See [[Project Ideas]] for some possible project ideas, or propose your own.
 Describe the general problem area - what is the ergonomic problem you have identified? Why does it need to be redesigned? Describe your approach and what you will do over the next month? Break down week by week.
 
 ### Project Presentations
-*Submissions due by 3 Dec*
+*Submissions due by 3 Dec* 
 *Class presentations on 5/6 Dec*
 
 Describe the general problem area - what is the ergonomic problem you have identified? Why does it need to be redesigned? Describe your approach and what you will do over the next month? Break down week by week.
@@ -34,4 +34,4 @@ The total grade for the ergonomics project is **20 points**, distributed across 
 
 **Prototyping and Evaluation (5 points)** measures the ability to translate ergonomic insights into tangible design improvements and includes testing with users to assess usability or comfort.
 
-Finally, **Documentation of Process and Outcome (5 points)** examines how clearly and effectively the project is communicated—covering research, prototypes, findings, and the overall coherence between research, design, and final outcomes.
+Finally, **Documentation of Process and Outcome (5 points)** examines how clearly and effectively the project is presented—covering research, prototypes, findings, and the overall coherence between research, design, and final outcomes.
