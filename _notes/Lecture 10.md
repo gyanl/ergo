@@ -11,4 +11,4 @@ title: Lecture 10
 
 - Slips
 - Mistakes
-- [[Exercise - Types of Errors]]
+- [[Exercise - Forcing Functions]]

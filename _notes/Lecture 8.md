@@ -11,7 +11,7 @@ title: Lecture 8
 
 
 ## Error Prevention
-- [[Exercise - Types of Errors]]
+- [[Exercise - Forcing Functions]]
 - What happens when something goes wrong?
 - How can we reduce chances of error?
 #### Resources
