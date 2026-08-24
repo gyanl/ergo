@@ -8,3 +8,5 @@ _notes/.space/context.mdb
 .DS_Store
 _notes/Private/.space/def.json
 /_notes/Private
+_site
+.jekyll-cache

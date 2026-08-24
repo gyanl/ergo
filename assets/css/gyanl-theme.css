@@ -1,0 +1,717 @@
+/*
+ * The gyanl.com theme, ported to the course site.
+ *
+ * This file is loaded LAST, after the template's own stylesheet.css / main.css
+ * (Bulma) / Util.css, and it overrides them rather than replacing them: the
+ * layouts are still built out of Bulma's .columns and .column, and the digital
+ * garden's own machinery — backlinks, page previews, the notes feed — still
+ * wants the classes those files define. What changes here is everything the
+ * reader can see: the palette, the type, the header, the search, the page.
+ *
+ * The palette and the scale are the ones in gyanl.com's main.css, copied rather
+ * than imported — the two sites are separate repos with separate deploys, and a
+ * shared file would be a build step neither of them has. Keep them in step by
+ * hand; the tokens below are the whole of what has to match.
+ */
+
+/* ===== Tokens ===== */
+
+:root {
+    --text-reg: rgb(42, 42, 42);
+    --text-secondary: rgba(42, 42, 42, .7);
+    --background-color: #FFFFFF;
+    --slightly-warm-gray: #faf9f9;
+    --black-20: rgba(0, 0, 0, .2);
+    --black-10: rgba(0, 0, 0, .1);
+    --black-5: rgba(0, 0, 0, .05);
+    --black-3: rgba(0, 0, 0, .03);
+    --code-background: #21244c;
+    --code-color: #e6e6f0;
+    --header-background: rgba(255, 255, 255, 0.4);
+    --header-shadow: rgba(0, 0, 0, 0.1);
+    --search-panel-bg: rgba(255, 255, 255, 0.94);
+    --footer-ground: #F0EFED;
+
+    --accent-h: 348;
+    --accent-s: 70%;
+    --accent-l: 40%;
+    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+
+    /* The system stack, as on gyanl.com: nothing is downloaded for text, so the
+       first paint is the final one. The template's Besley and IBM Plex links
+       are removed from the layout head. */
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --font-heading: var(--font-body);
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 32px;
+
+    --measure: 760px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 20px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 30px;
+    --spacing-3xl: 40px;
+    --spacing-4xl: 45px;
+    --spacing-5xl: 80px;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 10px;
+    --logo-mark-size: 44px;
+
+    --letter-spacing-regular: 0.01em;
+    --letter-spacing-wide: 0.05em;
+
+    --transition-fast: .15s ease;
+    --transition-normal: .25s ease;
+
+    --focus-outline: 2px solid var(--accent-color);
+    --focus-outline-offset: 2px;
+
+    /* The template's own tokens, re-pointed at the palette above rather than
+       chased down rule by rule. stylesheet.css defines these for both schemes
+       and everything the digital garden draws — borders, links, card grounds,
+       the backlink boxes — reads them; mapping them here is what makes those
+       parts follow this theme instead of the one they shipped with.
+
+       Specificity: these blocks are :root[data-theme=...] (0,2,0) against the
+       template's html[data-theme=...] (0,1,1), so they win wherever both apply,
+       and this file loads last besides. */
+    --color-bg-main: var(--background-color);
+    --color-bg-sub: var(--slightly-warm-gray);
+    --color-text-main: var(--text-reg);
+    --color-text-sub: var(--text-secondary);
+    --color-text-link: var(--accent-color);
+    --color-text-link-light: var(--black-5);
+    --color-border-dark: var(--text-reg);
+    --color-border: var(--black-20);
+    --color-border-light: var(--black-10);
+
+    color-scheme: light dark;
+}
+
+/* Dark, in the two ways it can be asked for. Both blocks carry the same values:
+   (1) the system asks and no explicit choice overrides it, (2) the reader
+   picked it. `color-scheme` is what makes the browser's own furniture follow. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --text-reg: #E8E8E8;
+        --text-secondary: rgba(255, 255, 255, .75);
+        --background-color: #1a1a1a;
+        --slightly-warm-gray: #2C2C2C;
+        --black-20: rgba(255, 255, 255, .2);
+        --black-10: rgba(255, 255, 255, .1);
+        --black-5: rgba(255, 255, 255, .05);
+        --black-3: rgba(255, 255, 255, .03);
+        --code-background: #12121c;
+        --header-background: rgba(30, 30, 30, 0.4);
+        --header-shadow: rgba(0, 0, 0, 0.3);
+        --search-panel-bg: rgba(28, 28, 28, 0.94);
+        --footer-ground: #121212;
+        --accent-s: 80%;
+        --accent-l: 65%;
+
+        /* The template's tokens again — see the note in the base block. They have
+           to be repeated per scheme: stylesheet.css sets them under
+           html[data-theme="dark"], which is (0,1,1) and outranks the (0,1,0) of a
+           bare :root, so the mapping in the base block loses exactly when a scheme
+           is pinned. Written out here at (0,2,0), it wins. */
+        --color-bg-main: var(--background-color);
+        --color-bg-sub: var(--slightly-warm-gray);
+        --color-text-main: var(--text-reg);
+        --color-text-sub: var(--text-secondary);
+        --color-text-link: var(--accent-color);
+        --color-text-link-light: var(--black-5);
+        --color-border-dark: var(--text-reg);
+        --color-border: var(--black-20);
+        --color-border-light: var(--black-10);
+    }
+}
+
+:root[data-theme="dark"] {
+    --text-reg: #E8E8E8;
+    --text-secondary: rgba(255, 255, 255, .75);
+    --background-color: #1a1a1a;
+    --slightly-warm-gray: #2C2C2C;
+    --black-20: rgba(255, 255, 255, .2);
+    --black-10: rgba(255, 255, 255, .1);
+    --black-5: rgba(255, 255, 255, .05);
+    --black-3: rgba(255, 255, 255, .03);
+    --code-background: #12121c;
+    --header-background: rgba(30, 30, 30, 0.4);
+    --header-shadow: rgba(0, 0, 0, 0.3);
+    --search-panel-bg: rgba(28, 28, 28, 0.94);
+    --footer-ground: #121212;
+    --accent-s: 80%;
+    --accent-l: 65%;
+    color-scheme: dark;
+
+    /* The template's tokens again — see the note in the base block. They have
+       to be repeated per scheme: stylesheet.css sets them under
+       html[data-theme="dark"], which is (0,1,1) and outranks the (0,1,0) of a
+       bare :root, so the mapping in the base block loses exactly when a scheme
+       is pinned. Written out here at (0,2,0), it wins. */
+    --color-bg-main: var(--background-color);
+    --color-bg-sub: var(--slightly-warm-gray);
+    --color-text-main: var(--text-reg);
+    --color-text-sub: var(--text-secondary);
+    --color-text-link: var(--accent-color);
+    --color-text-link-light: var(--black-5);
+    --color-border-dark: var(--text-reg);
+    --color-border: var(--black-20);
+    --color-border-light: var(--black-10);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    /* The template's tokens again — see the note in the base block. They have
+       to be repeated per scheme: stylesheet.css sets them under
+       html[data-theme="dark"], which is (0,1,1) and outranks the (0,1,0) of a
+       bare :root, so the mapping in the base block loses exactly when a scheme
+       is pinned. Written out here at (0,2,0), it wins. */
+    --color-bg-main: var(--background-color);
+    --color-bg-sub: var(--slightly-warm-gray);
+    --color-text-main: var(--text-reg);
+    --color-text-sub: var(--text-secondary);
+    --color-text-link: var(--accent-color);
+    --color-text-link-light: var(--black-5);
+    --color-border-dark: var(--text-reg);
+    --color-border: var(--black-20);
+    --color-border-light: var(--black-10);
+}
+
+/* ===== Base ===== */
+
+html,
+body {
+    background-color: var(--background-color);
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    line-height: 1.7;
+    color: var(--text-reg);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Bulma sets its own colours on all of these. */
+.content,
+.content p,
+.content li,
+.content td,
+.content th,
+.title,
+.subtitle,
+p,
+li,
+td,
+th,
+strong,
+blockquote {
+    color: var(--text-reg);
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.jumbo,
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    font-family: var(--font-heading);
+    color: var(--text-reg);
+    letter-spacing: var(--letter-spacing-regular);
+    font-weight: 600;
+}
+
+.jumbo,
+h1,
+.content h1 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.content h2 {
+    font-size: var(--font-size-2xl);
+    margin: var(--spacing-3xl) 0 var(--spacing-md) 0;
+}
+
+.content h3 {
+    font-size: var(--font-size-xl);
+    margin: var(--spacing-2xl) 0 var(--spacing-md) 0;
+}
+
+.content h4 {
+    font-size: var(--font-size-lg);
+    margin: var(--spacing-xl) 0 var(--spacing-sm) 0;
+}
+
+/* The template uses h5.meta-title for its small uppercase labels. */
+.meta-title,
+.content h5 {
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+a {
+    color: var(--text-reg);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.content a,
+.internal-link {
+    border-bottom: 1px solid var(--black-20);
+}
+
+.content a:hover,
+.internal-link:hover {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+}
+
+:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
+    border-radius: var(--border-radius-sm);
+}
+
+.content blockquote {
+    border-left: 3px solid var(--accent-color);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--black-3);
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    font-size: var(--font-size-lg);
+}
+
+.content code,
+.content pre {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+}
+
+.content code {
+    background-color: var(--black-5);
+    color: var(--text-reg);
+    border-radius: var(--border-radius-sm);
+    padding: 2px 6px;
+}
+
+.content pre {
+    background-color: var(--code-background);
+    color: var(--code-color);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.content pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+.content img,
+.content video,
+.content iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    display: block;
+    margin: var(--spacing-xl) 0;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-md);
+}
+
+.content th,
+.content td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--black-10);
+    text-align: left;
+}
+
+.content th {
+    background-color: var(--black-5);
+}
+
+.content hr {
+    border: 0;
+    border-top: 1px solid var(--black-10);
+    margin: var(--spacing-3xl) 0;
+    height: 0;
+    background: none;
+}
+
+/* ===== The page ===== */
+
+.section {
+    padding: 0 var(--spacing-xl) var(--spacing-5xl) var(--spacing-xl);
+}
+
+.note-page-section,
+.column {
+    max-width: var(--measure);
+}
+
+/* ===== Header ===== */
+
+.navbar,
+.navbar.is-transparent {
+    background: none;
+    border: 0;
+    min-height: 0;
+}
+
+.site-header {
+    position: relative;
+    width: 100%;
+    max-width: var(--measure);
+    margin: var(--spacing-4xl) auto var(--spacing-lg) auto;
+    padding: 0 var(--spacing-xl);
+    box-sizing: border-box;
+}
+
+.site-header__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--logo-mark-size);
+}
+
+/* Back and the scheme switcher are placed against the row rather than sitting
+   in flow beside the mark: in flow they would be siblings competing for the
+   row's width and the mark would centre against whatever was left over. */
+.site-back,
+.theme-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: var(--logo-mark-size);
+    height: var(--logo-mark-size);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--black-5);
+    color: var(--text-reg);
+    cursor: pointer;
+    appearance: none;
+    transition: background-color var(--transition-fast);
+}
+
+.site-back {
+    left: var(--spacing-xl);
+}
+
+.theme-toggle {
+    right: var(--spacing-xl);
+    font-size: calc(var(--logo-mark-size) * 0.42);
+    line-height: 1;
+}
+
+.site-back:hover,
+.theme-toggle:hover {
+    background-color: var(--black-10);
+}
+
+.site-back svg {
+    width: 55%;
+    height: 55%;
+}
+
+.site-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--logo-mark-size);
+    height: var(--logo-mark-size);
+    color: var(--text-reg);
+    border: 0;
+}
+
+.site-mark svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.site-mark__art path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.12;
+    stroke-linecap: round;
+}
+
+/* The course name, under the mark rather than beside it: this site has a title
+   worth reading, where gyanl.com has only the mark. */
+.site-header__title {
+    display: block;
+    margin: var(--spacing-sm) 0 0 0;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.site-header__links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.site-header__links a {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 999px;
+    background-color: var(--black-5);
+}
+
+.site-header__links a:hover {
+    color: var(--text-reg);
+    background-color: var(--black-10);
+}
+
+/* ===== Footer ===== */
+
+#copyright {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--spacing-3xl) var(--spacing-xl) var(--spacing-3xl) var(--spacing-xl);
+    border-top: 1px solid var(--black-10);
+}
+
+#copyright-notice {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0;
+}
+
+/* ===== Feed ===== */
+
+.notelist-feed,
+.list-feed {
+    border-bottom: 1px solid var(--black-10);
+    padding: var(--spacing-lg) 0;
+}
+
+.notelist-feed a,
+.list-feed a {
+    display: block;
+    border: 0;
+}
+
+.notelist-feed h6 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-reg);
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.notelist-feed p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+}
+
+.notelist-feed .excerpt {
+    margin-top: var(--spacing-xs);
+}
+
+.notelist-feed a:hover h6 {
+    color: var(--accent-color);
+}
+
+.centre-title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* The template puts an external-link glyph after every href starting http, by
+   background-image with room reserved in the padding. The mark in the header IS
+   such a link — it goes out to gyanl.com — and it is a picture already. */
+.site-mark[href^="http"],
+.site-header__links a[href^="http"] {
+    background-image: none;
+    padding-right: 0;
+}
+
+/* ===== Search =====
+ *
+   The field is gyanl.com's: a pill on a 5% wash, the magnifying glass inset at
+   the left, no border until it is focused. The template ships it as a Bulma
+   .input, which is a square-cornered box with its own blue-tinted background
+   and its own focus ring.
+
+   The results keep the template's markup and its Lunr wiring — this only
+   restyles what that draws. */
+.search-wrapper {
+    position: relative;
+    max-width: var(--measure);
+    margin: 0 auto var(--spacing-xl) auto;
+}
+
+#search-input,
+input.input.is-medium#search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--logo-mark-size);
+    margin: 0;
+    padding: 0 var(--spacing-lg) 0 calc(var(--spacing-lg) + var(--font-size-xl) + var(--spacing-sm));
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    color: var(--text-reg);
+    background-color: var(--black-5);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: calc(var(--logo-mark-size) / 2);
+    box-shadow: none;
+    transition: var(--transition-normal);
+}
+
+#search-input::placeholder {
+    color: var(--text-secondary);
+}
+
+#search-input:focus,
+#search-input:focus-visible {
+    outline: none;
+    background-color: var(--background-color);
+    border-color: var(--black-20);
+    box-shadow: 0 0 0 3px var(--black-5);
+}
+
+/* The glyph, as an element rather than a ::before with a codepoint in it: the
+   Phosphor web font maps its icons through class names, and hardcoding the
+   private-use character is a guess that breaks silently on the next release of
+   the icon set. */
+.search-wrapper__icon {
+    position: absolute;
+    left: var(--spacing-lg);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--font-size-xl);
+    line-height: 1;
+    color: var(--text-secondary);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* The results panel: glass, mostly opaque, sitting under the field. */
+.search-results {
+    position: absolute;
+    top: calc(100% + var(--spacing-sm));
+    left: 0;
+    right: 0;
+    max-height: min(70vh, 560px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--spacing-sm);
+    box-sizing: border-box;
+    background: var(--search-panel-bg);
+    border: 0.5px solid var(--black-10);
+    border-radius: var(--border-radius-md);
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+    box-shadow: 0 8px 32px var(--header-shadow);
+    z-index: 100;
+}
+
+.search-results:empty {
+    display: none;
+}
+
+.search-results-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-results-list-item {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+.search-result {
+    display: block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 0;
+    border-radius: var(--border-radius-sm);
+    color: var(--text-reg);
+    transition: background-color var(--transition-fast);
+}
+
+.search-result:hover,
+.search-result:focus-visible {
+    background-color: var(--black-5);
+    border: 0;
+}
+
+.search-result-doc-title {
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    color: var(--text-reg);
+}
+
+.search-result-section,
+.search-result-previews {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.search-result-doc .svg-doc {
+    stroke: var(--text-secondary);
+    flex: none;
+}
+
+.search-result-doc {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.search-result-highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.search-no-result {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}

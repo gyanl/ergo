@@ -35,8 +35,14 @@
 {%- if page.feedformat == "card" -%}
     {%- if site.preferences.search.enabled -%}
         <!-- search bar -->
-        <div class="block">
-            <input class="input is-medium" type="text" placeholder="Search notes.." id="search-input" autocomplete="off">
+        {%- comment -%}
+          .search-wrapper is the positioning context for the magnifying glass
+          and for the results panel, both of which the theme draws — see the
+          Search section of assets/css/gyanl-theme.css.
+        {%- endcomment -%}
+        <div class="block search-wrapper">
+            <i class="ph ph-magnifying-glass search-wrapper__icon" aria-hidden="true"></i>
+            <input class="input is-medium" type="search" placeholder="Search notes…" id="search-input" autocomplete="off" spellcheck="false">
             <div id="search-results" class="search-results"></div>
         </div>
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/lunr.min.js"></script>
